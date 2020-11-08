@@ -6,11 +6,20 @@ import particlesOptions from "./particles.json";
 function App() {
   return (
     <div className="App">
-      <h1>Portfolio Update</h1>
-      <p>
-        This is some information about my portfolio. Click here to do something
-        important. Idk, we'll see what happens
-      </p>
+      <nav>
+        <p>About</p>
+        <p>Work</p>
+        <p>Contact</p>
+      </nav>
+      <div className="content" id="repulse-div">
+        <h1>
+          Hi, I am <span>Imani Paul</span>.
+        </h1>
+        <p>
+          I'm a software engineer, web developer, and creative problem solver.
+        </p>
+      </div>
+
       <Particles options={particlesOptions} />
     </div>
   );
