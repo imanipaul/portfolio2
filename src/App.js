@@ -8,14 +8,14 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <div className="content" id="repulse-div">
+      {/* <div className="content" id="repulse-div">
         <h1>
           Hi, I am <span>Imani Paul</span>.
         </h1>
         <p>
           I'm a software engineer, web developer, and creative problem solver.
         </p>
-      </div>
+      </div> */}
 
       <Particles options={particlesOptions} />
     </div>
