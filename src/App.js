@@ -2,15 +2,12 @@ import "./App.css";
 import Particles from "react-tsparticles";
 
 import particlesOptions from "./particles.json";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <p>About</p>
-        <p>Work</p>
-        <p>Contact</p>
-      </nav>
+      <Nav />
       <div className="content" id="repulse-div">
         <h1>
           Hi, I am <span>Imani Paul</span>.
