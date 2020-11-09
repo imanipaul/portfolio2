@@ -55,11 +55,15 @@
         margin: 0px;
         margin-bottom: 25px;
         width: 545px;
+        cursor: default;
 
         &:first-of-type {
           margin-top: 50px;
           span {
             text-decoration: underline;
+            &:hover {
+              color: $accent;
+            }
           }
         }
 
@@ -135,7 +139,6 @@
             color: white;
             margin-bottom: 10px;
             letter-spacing: 2px;
-            // font-variant: small-caps;
           }
 
           dd {
@@ -143,8 +146,12 @@
             font-weight: 300;
             font-size: 16px;
             line-height: 23px;
-
             color: #c4c4c4;
+            cursor: default;
+
+            &:hover {
+              color: $accent;
+            }
           }
         }
       }
