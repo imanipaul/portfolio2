@@ -38,18 +38,25 @@
 
         p {
           margin: 0px;
+          margin-bottom: 10px;
         }
         .name {
           font-family: "Roboto", monospace;
           font-weight: 700;
           font-size: 18px;
           color: white;
-          margin-bottom: 10px;
         }
 
         .description {
           color: $pale-gray;
           font-size: 18px;
+        }
+
+        .tags {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          max-height: 26px;
         }
       }
     }
