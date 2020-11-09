@@ -1,0 +1,16 @@
+@import "./variables.scss";
+
+.tag {
+  border: 1px solid $accent;
+  color: $accent;
+  padding: 4px 10px;
+  cursor: default;
+
+  &:not(:first-of-type) {
+    margin-left: 15px;
+  }
+
+  &:hover {
+    background-color: rgba($accent, 0.2);
+  }
+}
