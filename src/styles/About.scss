@@ -1,160 +1,72 @@
 @import "./variables.scss";
 
+@font-face {
+  font-family: "Roboto Mono Medium";
+  src: url("../fonts/RobotoMono-Medium.ttf");
+}
+
 .about {
-  width: 100%;
+  background-color: #202022;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
-  margin-top: 250px;
-  margin-bottom: 150px;
-  .about-info {
-    background: #0e121281;
-    width: 774px;
-    height: 329px;
+  justify-content: center;
+  // padding-top: 140px;
+  // padding-bottom: 140px;
+
+  .about-content {
+    width: 300px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    text-align: left;
+    // margin-top: 140px;
+    height: fit-content;
 
-    .left-section {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-
-      p {
-        font-family: "Roboto", monospace;
-        color: $main-purple;
-        font-weight: 700;
-        font-size: 25px;
-        letter-spacing: 0.2em;
-        font-variant: small-caps;
-        margin: 0px;
-        margin-top: 41px;
-        margin-bottom: 20px;
-      }
-
-      img {
-        width: 147px;
-        filter: grayscale(100%);
-        clip-path: circle(45.4% at 50% 50%);
-      }
+    h4 {
+      font-family: "Roboto Mono Medium", sans-serif;
+      font-variant: small-caps;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: 0.2em;
+      align-self: flex-start;
+      color: $purple-accent;
+      margin: 0px;
     }
-    .right-section {
-      flex: 1;
-      text-align: left;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
 
-      p {
-        font-size: 18px;
-        line-height: 21px;
-        color: #c4c4c4;
-        font-family: "Roboto", sans-serif;
-        font-weight: normal;
-        margin: 0px;
-        margin-bottom: 25px;
-        width: 545px;
-        cursor: default;
+    p {
+      margin: 0px;
+      color: $pale-gray;
+      font-size: 18px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
 
-        &:first-of-type {
-          margin-top: 50px;
-          span {
-            text-decoration: underline;
-            &:hover {
-              color: $accent;
-            }
-          }
-        }
-
+      &:first-of-type {
+        margin-top: 20px;
+        margin-bottom: 20px;
         span {
-          font-weight: 500;
           color: white;
+          font-weight: 500;
+          text-decoration: underline;
+        }
+      }
+
+      &:last-of-type {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        span {
+          color: white;
+          font-weight: 500;
         }
       }
     }
-  }
 
-  .skills {
-    background: #0e121281;
-    width: 774px;
-    height: 329px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 100px;
-
-    .left-section {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
+    img {
       width: 147px;
-
-      p {
-        font-family: "Roboto", monospace;
-        color: $main-purple;
-        font-weight: 700;
-        font-size: 25px;
-        letter-spacing: 0.3em;
-        font-variant: small-caps;
-        margin: 0px;
-        margin-bottom: 20px;
-        text-align: left;
-        padding-left: 8px;
-      }
-
-      img {
-        width: 147px;
-      }
-    }
-    .right-section {
-      flex: 1;
-      text-align: left;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .lists {
-        font-size: 18px;
-        line-height: 21px;
-        color: #c4c4c4;
-        font-family: "Roboto", sans-serif;
-        font-weight: normal;
-        margin: 0px;
-        margin-bottom: 25px;
-        width: 545px;
-        display: flex;
-        flex-direction: row;
-        margin-top: 7px;
-        justify-content: space-between;
-
-        dl {
-          margin-top: 0px;
-          dt {
-            font-family: "Roboto", monospace;
-            font-size: 20px;
-            font-variant-caps: small-caps;
-            font-weight: 500;
-            color: white;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-          }
-
-          dd {
-            margin: 0px;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 23px;
-            color: #c4c4c4;
-            cursor: default;
-
-            &:hover {
-              color: $accent;
-            }
-          }
-        }
-      }
+      height: 147px;
     }
   }
 }

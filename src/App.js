@@ -11,12 +11,8 @@ import Blank from "./components/Blank";
 function App() {
   return (
     <div className="App">
-      {/* <Nav /> */}
       <Home />
-      {/* <Blank /> */}
-      {/* <About /> */}
-      {/* <ClientWork /> */}
-      {/* <Particles options={particlesOptions} /> */}
+      <About />
     </div>
   );
 }
