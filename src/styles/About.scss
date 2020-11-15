@@ -1,9 +1,5 @@
 @import "./variables.scss";
-
-@font-face {
-  font-family: "Roboto Mono Medium";
-  src: url("../fonts/RobotoMono-Medium.ttf");
-}
+@import "./fonts.scss";
 
 .about {
   background-color: #202022;
