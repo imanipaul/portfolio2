@@ -4,11 +4,12 @@
 
 html,
 body,
-#root {
+#root,
+.App {
   height: 100%;
 }
 html {
-  background-color: #0f1212;
+  background-color: #151515;
 }
 
 body {

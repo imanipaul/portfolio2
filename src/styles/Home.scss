@@ -3,19 +3,37 @@
 .home {
   text-align: left;
   // width: 850px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+  // color: rgb(18, 18, 14);
 
   div {
-    margin: 40vh auto 0px 300px;
+    // margin: 40vh auto 0px auto;
+    align-self: center;
+    text-align: left;
+
+    p {
+      font-family: "Roboto Mono", serif;
+      font-weight: lighter;
+      font-size: 25px;
+      color: #fff;
+      margin: 0px;
+    }
+
     h1 {
       font-size: 50px;
-      color: #fff;
+      letter-spacing: 0.15em;
+      // color: #fff;
+      color: #8e74e9;
+      // font-weight: bold;
+      font-family: "Roboto", serif;
       font-weight: bold;
-      font-family: "Roboto Slab", serif;
-      font-weight: 600;
+      margin-top: 10px;
       margin-bottom: 10px;
+      // text-align: left;
       span {
         color: $main-purple;
         font-weight: bold;
@@ -23,11 +41,12 @@
     }
 
     h2 {
-      font-size: 25px;
+      font-size: 16px;
       font-family: "Roboto Slab", serif;
       font-weight: 300;
       /* font-variant: small-caps; */
-      color: #fff;
+      // color: #fff;
+      color: #949495;
       margin: 0px;
       line-height: 25px;
     }
@@ -38,12 +57,14 @@
     height: 46px;
     font-family: "Roboto Slab", serif;
     font-weight: 300;
-    color: $light-gray;
+    color: #fff;
     border: 1px solid $light-gray;
-    background-color: transparent;
-    font-size: 22px;
-    margin-top: 140px;
+    background-color: $light-gray;
+    font-size: 18px;
+    // margin-top: 20vw;
     transition: all 0.5s ease;
+    position: absolute;
+    bottom: 10vh;
 
     &:hover {
       background-color: $light-gray;
