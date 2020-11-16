@@ -1,0 +1,25 @@
+footer {
+  width: 100%;
+  margin-top: 60px;
+  position: absolute;
+  bottom: 20px;
+
+  .icons {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .disclaimer {
+    margin-top: 10px;
+    p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      margin: 0 auto;
+    }
+  }
+}

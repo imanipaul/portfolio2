@@ -1,0 +1,47 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #202022;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  position: relative;
+  h4 {
+    font-family: "Roboto Mono Medium", serif;
+    font-variant: small-caps;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    // color: $purple-accent;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #c4c4c4;
+    margin: 0px;
+    line-height: 21px;
+    width: 300px;
+    margin-bottom: 35px;
+  }
+
+  button {
+    width: 136px;
+    height: 37px;
+    color: $green-accent;
+    border: 1px solid $green-accent;
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+}
