@@ -1,16 +1,18 @@
 @import "./variables.scss";
 
 .tag {
-  border: 1px solid $accent;
-  color: $accent;
+  border: 1px solid $green-accent;
+  color: $green-accent;
   padding: 4px 10px;
   cursor: default;
+  width: fit-content;
+  font-size: 12px;
 
   &:not(:first-of-type) {
     margin-left: 15px;
   }
 
   &:hover {
-    background-color: rgba($accent, 0.2);
+    background-color: rgba($green-accent, 0.2);
   }
 }

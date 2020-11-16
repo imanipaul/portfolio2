@@ -1,20 +1,21 @@
 import "./App.css";
-import Particles from "react-tsparticles";
 
-import particlesOptions from "./particles.json";
 import Home from "./components/Home";
-import Nav from "./components/Nav";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import ClientWork from "./components/ClientWork";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
       <Home />
       <About />
+      <Skills />
       <ClientWork />
-      <Particles options={particlesOptions} />
+      <Projects />
+      <Contact />
     </div>
   );
 }

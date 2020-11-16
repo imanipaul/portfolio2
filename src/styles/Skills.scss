@@ -1,0 +1,87 @@
+@import "./variables.scss";
+
+.skills {
+  background: #151515;
+  height: 100vh;
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // padding-top: 140px;
+  // padding-bottom: 140px;
+
+  .skills-content {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    text-align: left;
+    // margin-top: 140px;
+    height: fit-content;
+
+    h4 {
+      font-family: "Roboto Mono Medium", sans-serif;
+      font-variant: small-caps;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: 0.2em;
+      align-self: flex-start;
+      color: $purple-accent;
+      margin: 0px;
+    }
+
+    .skills-lists {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .list {
+        h5 {
+          font-family: "Roboto Mono Regular";
+          font-variant: small-caps;
+          color: white;
+          font-size: 16px;
+          font-weight: 400;
+          margin: 0px;
+          margin-bottom: 25px;
+        }
+
+        ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px;
+          line-height: 22px;
+          li {
+            font-size: 15;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            // margin-bottom: 3px;
+            &:before {
+              content: "›";
+              color: $green-accent;
+              padding-right: 5px;
+            }
+          }
+        }
+
+        &:first-of-type {
+          width: 160px;
+        }
+        // &:nth-of-type(2) {
+        //   width: 129px;
+        // }
+        &:nth-of-type(3) {
+          width: 160px;
+          margin-top: 25px;
+        }
+        &:last-of-type {
+          width: 140px;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
