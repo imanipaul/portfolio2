@@ -1,6 +1,5 @@
 import React from "react";
 import Tag from "./Tag";
-import jh2 from "../assets/JH-computer.png";
 import atm from "../assets/atm.png";
 import chumleys from "../assets/chumleys.png";
 import ensemble from "../assets/ensemble.png";

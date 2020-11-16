@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../styles/Contact.scss";
 import Footer from "./Footer";
 

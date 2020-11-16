@@ -1,8 +1,6 @@
 import React from "react";
 import att from "../assets/att.png";
-import hulu from "../assets/shape-the-future.png";
 import hsbc from "../assets/hsbc.png";
-import jh from "../assets/jh.png";
 import jh2 from "../assets/JH-computer.png";
 import "../styles/ClientWork.scss";
 import Tag from "./Tag";
