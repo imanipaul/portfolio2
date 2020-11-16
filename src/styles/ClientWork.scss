@@ -1,12 +1,13 @@
 @import "./variables.scss";
 
 .client-work {
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #202022;
   align-items: center;
   justify-content: center;
+  padding: 140px 0px;
 
   .client-header {
     width: 300px;
@@ -33,28 +34,34 @@
   }
 
   .all-projects {
-    // background-color: lightblue;
     width: 100%;
-    margin-top: 40px;
+    overflow: hidden;
 
     .project {
       display: flex;
       flex-direction: row;
       height: 260px;
-      // border: 1px solid red;
-      // align-items: center;
+      margin-top: 40px;
+      position: relative;
+
+      &:not(:first-of-type) {
+        margin-top: 80px;
+      }
 
       .project-info {
-        // width: 42%;
         text-align: left;
         margin-left: 20px;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+
         h5 {
           font-family: "Roboto", sans-serif;
           font-weight: normal;
           font-size: 20px;
           color: white;
           margin: 0px;
-          margin-top: 40px;
+          margin-top: 20px;
         }
         p {
           font-size: 17px;
@@ -72,89 +79,42 @@
           flex-wrap: wrap;
           margin-top: 25px;
         }
+
+        .icons {
+          margin-top: 35px;
+
+          .external {
+            margin-left: 25px;
+          }
+        }
       }
 
-      .project-image {
-        width: 58%;
-        overflow: hidden;
-        height: 90%;
-        align-self: center;
+      img {
+        position: absolute;
+        left: 50%;
+        z-index: 1;
+        filter: grayscale(30%);
+        opacity: 70%;
+      }
 
-        position: relative;
+      &.right {
+        justify-content: flex-end;
+        .project-info {
+          text-align: right;
+          margin-right: 20px;
+          margin-left: 0px;
+          align-items: flex-end;
+
+          .tag-container {
+            justify-content: flex-end;
+          }
+        }
 
         img {
-          height: 100%;
-          position: absolute;
-          left: 0;
+          left: auto;
+          right: 50%;
         }
       }
     }
   }
-  // width: 774px;
-  // align-self: center;
-  // margin-bottom: 200px;
-  // .title {
-  //   text-align: left;
-  //   color: $main-purple;
-  //   font-family: "Roboto", monospace;
-  //   font-weight: 700;
-  //   font-size: 25px;
-  //   letter-spacing: 0.2em;
-  //   font-variant: small-caps;
-  //   margin: 0px;
-  // }
-
-  // .subtitle {
-  //   font-family: "Roboto", monospace;
-  //   font-weight: 300;
-  //   font-size: 18px;
-  //   color: $light-gray;
-  //   text-align: left;
-  //   margin: 0px;
-  // }
-
-  // .content {
-  //   .project {
-  //     display: flex;
-  //     flex-direction: row;
-  //     align-items: center;
-  //     margin: 50px 0px;
-
-  //     img {
-  //       transition: all 0.3s ease;
-  //       &:hover {
-  //         transform: translateY(-10px);
-  //       }
-  //     }
-
-  //     .info {
-  //       text-align: left;
-  //       margin-left: 30px;
-  //       height: 100%;
-
-  //       p {
-  //         margin: 0px;
-  //         margin-bottom: 10px;
-  //       }
-  //       .name {
-  //         font-family: "Roboto", monospace;
-  //         font-weight: 700;
-  //         font-size: 18px;
-  //         color: white;
-  //       }
-
-  //       .description {
-  //         color: $pale-gray;
-  //         font-size: 18px;
-  //       }
-
-  //       .tags {
-  //         width: 100%;
-  //         display: flex;
-  //         flex-wrap: wrap;
-  //         max-height: 26px;
-  //       }
-  //     }
-  //   }
-  // }
 }
