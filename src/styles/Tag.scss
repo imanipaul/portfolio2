@@ -5,6 +5,8 @@
   color: $accent;
   padding: 4px 10px;
   cursor: default;
+  width: fit-content;
+  font-size: 12px;
 
   &:not(:first-of-type) {
     margin-left: 15px;

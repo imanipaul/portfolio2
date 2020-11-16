@@ -13,6 +13,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <ClientWork />
     </div>
   );
 }

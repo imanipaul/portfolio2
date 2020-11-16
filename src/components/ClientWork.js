@@ -3,15 +3,36 @@ import att from "../assets/forces-of-change.png";
 import hulu from "../assets/shape-the-future.png";
 import hsbc from "../assets/hsbc.png";
 import jh from "../assets/jh.png";
+import jh2 from "../assets/JH-computer.png";
 import "../styles/ClientWork.scss";
 import Tag from "./Tag";
 
 export default function ClientWork() {
   return (
     <section className="client-work">
-      <p className="title">client work</p>
-      <p className="subtitle">Selected works developed for clients.</p>
-      <div className="content">
+      <div className="client-header">
+        <h4 className="title">client work</h4>
+        <p className="subtitle">Selected works developed for clients.</p>
+      </div>
+      <div className="all-projects">
+        <div className="project">
+          <div className="project-info">
+            <h5>John Hancock Hub</h5>
+            <p>
+              Responsive landing page for the Forces of Change video series.
+            </p>
+
+            <div className="tag-container">
+              <Tag title={"React.js"} />
+              <Tag title={"YouTube API"} />
+            </div>
+          </div>
+          <div className="project-image">
+            <img src={jh2} alt="project screenshot" />
+          </div>
+        </div>
+      </div>
+      {/* <div className="content">
         <div className="project">
           <img src={att} alt="preview" />
           <div className="info">
@@ -70,7 +91,7 @@ export default function ClientWork() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
