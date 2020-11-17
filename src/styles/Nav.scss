@@ -10,6 +10,11 @@ nav {
   justify-content: flex-end;
   position: fixed;
 
+  //hamburger styles
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+
   // img {
   //   width: 72px;
   //   margin-left: 30px;
@@ -27,6 +32,14 @@ nav {
     font-family: "Roboto Mono", sans-serif;
     font-weight: 300;
     cursor: default;
+
+    //hamburger styles
+    height: 100%;
+    width: 100%;
+    background-color: lightcyan;
+    transform: translateX(100vw);
+    position: absolute;
+    top: 0;
 
     @media screen and (min-width: 425px) {
       width: 550px;
