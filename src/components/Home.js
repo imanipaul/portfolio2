@@ -6,13 +6,12 @@ import "../styles/Home.scss";
 
 export default function Home() {
   return (
-    <section className="home">
+    <section className="home" style={{ height: window.innerHeight }}>
       <div>
-        <p>Hello, I am</p>
         <h1>Imani Paul</h1>
 
         <h2>
-          Software Engineer. Web Developer. <br />
+          Software Engineer. Web Developer. {window.innerWidth < 425 && <br />}
           Creative Problem Solver.
         </h2>
       </div>

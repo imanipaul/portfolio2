@@ -1,23 +1,42 @@
+@import "./variables.scss";
+@import url("https://use.typekit.net/huy2pfg.css");
+
 nav {
   display: flex;
   flex-direction: row;
   height: 95px;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  position: fixed;
 
-  img {
-    width: 72px;
-    margin-left: 30px;
-  }
+  // img {
+  //   width: 72px;
+  //   margin-left: 30px;
+  // }
 
   div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 18px;
-    width: 331px;
-    margin-right: 26px;
+    font-size: 12px;
+    width: 50%;
+    // margin-right: 26px;
+    color: white;
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 300;
+    cursor: default;
+
+    @media screen and (min-width: 425px) {
+      width: 550px;
+      font-size: 18px;
+    }
+
+    p {
+      &:hover {
+        color: $green-accent;
+      }
+    }
   }
 }
