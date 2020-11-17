@@ -1,19 +1,29 @@
 @import "./variables.scss";
+@import url("https://use.typekit.net/huy2pfg.css");
 
 .home {
   text-align: left;
-  // width: 850px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  // color: rgb(18, 18, 14);
+
+  @media screen and (min-width: 425px) {
+    flex-direction: row;
+    justify-content: end;
+  }
 
   div {
-    // margin: 40vh auto 0px auto;
     align-self: center;
     text-align: left;
+    background-color: #15151588;
+
+    @media screen and (min-width: 426px) {
+      margin-top: 300px;
+      margin-left: 300px;
+      display: flex;
+      flex-direction: column;
+    }
 
     p {
       font-family: "Roboto Mono", serif;
@@ -21,23 +31,34 @@
       font-size: 25px;
       color: #fff;
       margin: 0px;
+
+      @media screen and (min-width: 426px) {
+        // display: none;
+      }
     }
 
     h1 {
       font-size: 50px;
       letter-spacing: 0.15em;
-      // color: #fff;
       color: $purple-accent;
-      // font-weight: bold;
       font-family: "Roboto", serif;
       font-weight: bold;
       margin-top: 10px;
       margin-bottom: 10px;
-      // text-align: left;
-      // span {
-      //   color: $main-purple;
-      //   font-weight: bold;
-      // }
+
+      //conqueror font
+      font-family: aw-conqueror-inline, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+
+      @media screen and (min-width: 426px) {
+        font-size: 80px;
+        // color: white;
+        color: $main-purple;
+        margin: 0px;
+        // margin-left: 100px;
+        line-height: 70px;
+      }
     }
 
     h2 {
@@ -46,9 +67,22 @@
       font-weight: 300;
       /* font-variant: small-caps; */
       // color: #fff;
-      color: #949495;
+      // color: #949495;
+      color: white;
       margin: 0px;
       line-height: 25px;
+      background-color: #15151575;
+      font-family: "Roboto Mono", monospace;
+      text-align: center;
+      @media screen and (min-width: 426px) {
+        // display: none;
+        font-size: 25px;
+        font-weight: 300;
+        margin-top: 20px;
+
+        // margin-right: 100px;
+        // margin-left: 20px;
+      }
     }
   }
   button {
@@ -64,12 +98,17 @@
     // margin-top: 20vw;
     transition: all 0.5s ease;
     position: absolute;
-    bottom: 10vh;
+    bottom: 20vh;
 
     &:hover {
       background-color: $light-gray;
       color: black;
       // font-weight: 400;
+    }
+
+    @media screen and (min-width: 426px) {
+      background-color: #151515;
+      left: 45%;
     }
   }
 }
