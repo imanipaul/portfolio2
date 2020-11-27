@@ -38,7 +38,7 @@
       color: $purple-accent;
       margin: 0px;
 
-      @media screen and (min-width: 426px) {
+      @media screen and (min-width: $tablet-min) {
         width: 80%;
       }
 
@@ -89,7 +89,7 @@
       width: 147px;
       height: 147px;
 
-      @media screen and (min-width: $tablet-max) {
+      @media screen and (min-width: $tablet-min) {
         width: 270px;
         height: auto;
         border-radius: 50%;

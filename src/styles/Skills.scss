@@ -22,6 +22,9 @@
     @media screen and (min-width: $about-break) {
       width: 80%;
     }
+    @media screen and (min-width: $tablet-max) {
+      width: 70%;
+    }
 
     h4 {
       font-family: "Roboto Mono Medium", sans-serif;
@@ -48,6 +51,17 @@
 
       @media screen and (min-width: $about-break) {
         width: 100%;
+      }
+
+      @media screen and (min-width: $tablet-max) {
+        width: 90%;
+        align-self: center;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+        align-items: flex-start;
       }
 
       .list {
@@ -98,6 +112,10 @@
           @media screen and (min-width: $about-break) {
             width: 55%;
           }
+          @media screen and (min-width: $desktop) {
+            width: auto;
+            margin-top: 0px;
+          }
         }
 
         &:nth-of-type(3) {
@@ -107,6 +125,10 @@
             width: 55%;
             margin-top: 40px;
           }
+          @media screen and (min-width: $desktop) {
+            width: auto;
+            margin-top: 0px;
+          }
         }
         &:last-of-type {
           width: 140px;
@@ -114,6 +136,10 @@
           @media screen and (min-width: $about-break) {
             width: auto;
             margin-top: 40px;
+          }
+          @media screen and (min-width: $desktop) {
+            width: auto;
+            margin-top: 0px;
           }
         }
 
