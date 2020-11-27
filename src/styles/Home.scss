@@ -8,8 +8,7 @@
   align-items: flex-start;
   justify-content: center;
 
-  @media screen and (min-width: 426px) {
-    flex-direction: row;
+  @media screen and (min-width: $tablet-min) {
     justify-content: end;
   }
 
@@ -18,11 +17,16 @@
     text-align: left;
     background-color: #15151588;
 
-    @media screen and (min-width: 426px) {
-      margin-top: 300px;
-      margin-left: 300px;
+    @media screen and (min-width: $tablet-min) {
+      margin-top: 55vh;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+    }
+
+    @media screen and (min-width: $laptop-min) {
+      align-self: flex-start;
+      margin-left: 10vw;
     }
 
     p {
@@ -32,7 +36,7 @@
       color: #fff;
       margin: 0px;
 
-      @media screen and (min-width: 426px) {
+      @media screen and (min-width: $tablet-min) {
         // display: none;
       }
     }
@@ -52,13 +56,21 @@
       font-weight: 400;
       font-style: normal;
 
-      @media screen and (min-width: 426px) {
-        font-size: 80px;
-        // color: white;
+      @media screen and (min-width: $tablet-min) {
+        // font-size: 80px;
         color: $main-purple;
         margin: 0px;
-        // margin-left: 100px;
         line-height: 70px;
+        text-align: left;
+        font-size: 13vw;
+      }
+
+      @media screen and (min-width: $home-break) {
+        font-size: 80px;
+      }
+
+      @media screen and (min-width: $laptop-min) {
+        font-size: 100px;
       }
     }
 
@@ -75,14 +87,30 @@
       background-color: #15151575;
       font-family: "Roboto Mono", monospace;
       text-align: center;
-      @media screen and (min-width: 426px) {
-        // display: none;
-        font-size: 25px;
+      @media screen and (min-width: $tablet-min) {
+        // font-size: 20px;
         font-weight: 300;
-        margin-top: 20px;
+        text-align: left;
+        font-size: 2.7vw;
+        margin-top: 0px;
+      }
 
-        // margin-right: 100px;
-        // margin-left: 20px;
+      @media screen and (min-width: $home-break) {
+        margin-top: 2vw;
+        // margin-top: 20px;
+      }
+
+      @media screen and (min-width: $tablet-max) {
+        font-size: 25px;
+      }
+
+      @media screen and (min-width: $laptop-min) {
+        margin-top: 30px;
+        font-size: 2.1vw;
+      }
+
+      @media screen and (min-width: $desktop) {
+        font-size: 30px;
       }
     }
   }
@@ -107,9 +135,9 @@
       // font-weight: 400;
     }
 
-    @media screen and (min-width: 426px) {
-      background-color: #151515;
-      left: 45%;
+    @media screen and (min-width: $tablet-min) {
+      // background-color: #151515;
+      bottom: 15vh;
     }
   }
 }
