@@ -29,6 +29,10 @@
       margin-left: 10vw;
     }
 
+    @media screen and (min-width: $desktop) {
+      margin-top: 70vh;
+    }
+
     p {
       font-family: "Roboto Mono", serif;
       font-weight: lighter;
@@ -72,6 +76,10 @@
       @media screen and (min-width: $laptop-min) {
         font-size: 100px;
       }
+      @media screen and (min-width: $desktop) {
+        font-size: 130px;
+        line-height: 130px;
+      }
     }
 
     h2 {
@@ -101,7 +109,7 @@
       }
 
       @media screen and (min-width: $tablet-max) {
-        font-size: 25px;
+        // font-size: 25px;
       }
 
       @media screen and (min-width: $laptop-min) {
@@ -111,6 +119,7 @@
 
       @media screen and (min-width: $desktop) {
         font-size: 30px;
+        margin-top: 10px;
       }
     }
   }
@@ -118,8 +127,9 @@
     align-self: center;
     width: 169px;
     height: 46px;
-    font-family: "Roboto Slab", serif;
-    font-weight: 300;
+    // font-family: "Roboto Slab", serif;
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 400;
     color: #fff;
     border: 1px solid $light-gray;
     background-color: $light-gray;
@@ -130,14 +140,18 @@
     bottom: 20vh;
 
     &:hover {
-      background-color: $light-gray;
-      color: black;
+      background-color: $bg;
+      color: white;
       // font-weight: 400;
     }
 
     @media screen and (min-width: $tablet-min) {
-      // background-color: #151515;
       bottom: 15vh;
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-color: $bg;
+      display: none;
     }
   }
 }
