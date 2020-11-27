@@ -22,6 +22,10 @@
     margin: 0px;
     text-align: center;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: 22px;
+    }
   }
 
   p {
@@ -33,6 +37,10 @@
     line-height: 21px;
     width: 300px;
     margin-bottom: 35px;
+
+    @media screen and (min-width: $tablet-min) {
+      width: 70%;
+    }
   }
 
   button {
