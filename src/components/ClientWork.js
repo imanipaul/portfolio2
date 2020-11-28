@@ -1,9 +1,10 @@
 import React from "react";
 import att from "../assets/att.png";
-import hulu from "../assets/shape-the-future.png";
+import att_full from "../assets/att-full.png";
 import hsbc from "../assets/hsbc.png";
-import jh from "../assets/jh.png";
-import jh2 from "../assets/JH-computer.png";
+import hsbc_full from "../assets/hsbc-full.png";
+import jh from "../assets/JH-computer.png";
+import jh_full from "../assets/jh-full.png";
 import "../styles/ClientWork.scss";
 import Tag from "./Tag";
 
@@ -39,10 +40,16 @@ export default function ClientWork() {
               />
             </div>
           </div>
-          <img src={jh2} alt="project screenshot" />
+          <img
+            src={window.innerWidth > 1024 ? jh_full : jh}
+            alt="project screenshot"
+          />
         </div>
         <div className="project right">
-          <img src={att} alt="project screenshot" />
+          <img
+            src={window.innerWidth > 1024 ? att_full : att}
+            alt="project screenshot"
+          />
           <div className="project-info">
             <h5>AT&T Forces of Change</h5>
             <p>
@@ -85,7 +92,10 @@ export default function ClientWork() {
               />
             </div>
           </div>
-          <img src={hsbc} alt="project screenshot" />
+          <img
+            src={window.innerWidth > 1024 ? hsbc_full : hsbc}
+            alt="project screenshot"
+          />
         </div>
       </div>
     </section>

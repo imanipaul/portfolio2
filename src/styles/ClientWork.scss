@@ -78,6 +78,15 @@
           margin: 0 auto;
         }
 
+        @media screen and (min-width: $tablet-max) {
+          width: 70%;
+          max-width: 640px;
+        }
+        @media screen and (min-width: $laptop-min) {
+          width: 915px;
+          max-width: none;
+        }
+
         h5 {
           font-family: "Roboto", sans-serif;
           font-weight: normal;
@@ -85,6 +94,10 @@
           color: white;
           margin: 0px;
           margin-top: 20px;
+
+          @media screen and (min-width: $laptop-min) {
+            font-size: 22px;
+          }
         }
         p {
           font-size: 17px;
@@ -93,6 +106,16 @@
           width: 177px;
           margin: 0px;
           margin-top: 18px;
+
+          @media screen and (min-width: $tablet-max) {
+            width: 30vw;
+            min-width: 177px;
+            max-width: 290px;
+          }
+
+          @media screen and (min-width: $laptop-min) {
+            font-size: 20px;
+          }
         }
 
         .tag-container {
@@ -136,6 +159,16 @@
             margin-right: 70px;
             width: 80%;
             margin: 0 auto;
+          }
+
+          @media screen and (min-width: $tablet-max) {
+            width: 70%;
+            max-width: 640px;
+          }
+
+          @media screen and (min-width: $laptop-min) {
+            width: 915px;
+            max-width: none;
           }
 
           .tag-container {
