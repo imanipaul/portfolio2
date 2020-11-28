@@ -9,9 +9,15 @@ export default function Footer() {
   return (
     <footer>
       <div className="icons">
-        <AiOutlineLinkedin color={"white"} size={"1.5em"} />
-        <FiGithub color={"white"} size={"1.5em"} />
-        <AiOutlineMail color={"white"} size={"1.5em"} />
+        <div className="icon">
+          <AiOutlineLinkedin size={"1.5em"} />
+        </div>
+        <div className="icon">
+          <FiGithub size={"1.5em"} />
+        </div>
+        <div className="icon">
+          <AiOutlineMail size={"1.5em"} />
+        </div>
       </div>
 
       <div className="disclaimer">

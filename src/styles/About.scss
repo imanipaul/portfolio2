@@ -16,8 +16,14 @@
     align-items: center;
     text-align: left;
 
-    @media screen and (min-width: 426px) {
+    @media screen and (min-width: $tablet-min) {
       width: 80%;
+    }
+
+    @media screen and (min-width: $tablet-max) {
+      // align-self: flex-start;
+      // margin-top: 140px;
+      width: 70%;
     }
 
     h4 {
@@ -32,8 +38,12 @@
       color: $purple-accent;
       margin: 0px;
 
-      @media screen and (min-width: 426px) {
+      @media screen and (min-width: $tablet-min) {
         width: 80%;
+      }
+
+      @media screen and (min-width: $tablet-max) {
+        font-size: 22px;
       }
     }
 
@@ -43,6 +53,7 @@
       font-size: 18px;
       font-family: "Roboto", sans-serif;
       font-weight: 400;
+      width: 100%;
 
       &:first-of-type {
         margin-top: 20px;
@@ -51,6 +62,9 @@
           color: white;
           font-weight: 500;
           text-decoration: underline;
+        }
+        @media screen and (min-width: $tablet-min) {
+          margin-bottom: 25px;
         }
       }
 
@@ -61,12 +75,34 @@
           color: white;
           font-weight: 500;
         }
+
+        @media screen and (min-width: $tablet-min) {
+          margin-top: 25px;
+        }
+      }
+
+      @media screen and (min-width: $tablet-min) {
+        line-height: 25px;
       }
     }
 
     img {
       width: 147px;
       height: 147px;
+
+      @media screen and (min-width: $tablet-min) {
+        width: 270px;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 50px;
+        transition: border-radius 1s ease;
+        filter: grayscale(30%);
+
+        &:hover {
+          border-radius: 5%;
+          filter: grayscale(0%);
+        }
+      }
     }
   }
 }

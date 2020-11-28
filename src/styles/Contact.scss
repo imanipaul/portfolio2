@@ -4,7 +4,8 @@
 .contact {
   display: flex;
   flex-direction: column;
-  background-color: #202022;
+  // background-color: #202022;
+  // background: linear-gradient(to top, #202020, #20202000);
   align-items: center;
   justify-content: center;
   height: 70vh;
@@ -22,6 +23,10 @@
     margin: 0px;
     text-align: center;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet-min) {
+      font-size: 22px;
+    }
   }
 
   p {
@@ -33,6 +38,10 @@
     line-height: 21px;
     width: 300px;
     margin-bottom: 35px;
+
+    @media screen and (min-width: $tablet-min) {
+      width: 70%;
+    }
   }
 
   button {
@@ -43,5 +52,9 @@
     background-color: transparent;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+
+    &:hover {
+      background-color: rgba($green-accent, 0.1);
+    }
   }
 }

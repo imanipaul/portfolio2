@@ -8,12 +8,23 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: $about-break) {
+    height: 80vh;
+  }
+
   .skills-content {
     width: 300px;
     display: flex;
     flex-direction: column;
     text-align: left;
     height: fit-content;
+
+    @media screen and (min-width: $about-break) {
+      width: 80%;
+    }
+    @media screen and (min-width: $tablet-max) {
+      width: 70%;
+    }
 
     h4 {
       font-family: "Roboto Mono Medium", sans-serif;
@@ -26,6 +37,10 @@
       align-self: flex-start;
       color: $purple-accent;
       margin: 0px;
+
+      @media screen and (min-width: $about-break) {
+        font-size: 22px;
+      }
     }
 
     .skills-lists {
@@ -33,6 +48,21 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+
+      @media screen and (min-width: $about-break) {
+        width: 100%;
+      }
+
+      @media screen and (min-width: $tablet-max) {
+        width: 90%;
+        align-self: center;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 100%;
+        margin-top: 30px;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
 
       .list {
         h5 {
@@ -43,6 +73,10 @@
           font-weight: 400;
           margin: 0px;
           margin-bottom: 25px;
+
+          @media screen and (min-width: $about-break) {
+            font-size: 20px;
+          }
         }
 
         ul {
@@ -50,29 +84,67 @@
           margin: 0px;
           padding: 0px;
           line-height: 22px;
+          @media screen and (min-width: $about-break) {
+            line-height: 25px;
+          }
           li {
-            font-size: 15;
+            font-size: 15px;
             font-family: "Roboto", sans-serif;
             font-weight: 300;
             &:before {
               content: "›";
-              color: $green-accent;
+              color: $green-accent3;
               padding-right: 5px;
+
+              @media screen and (min-width: $about-break) {
+                padding-right: 15px;
+              }
+            }
+
+            @media screen and (min-width: $about-break) {
+              font-size: 18px;
             }
           }
         }
 
         &:first-of-type {
           width: 160px;
+          @media screen and (min-width: $about-break) {
+            width: 55%;
+          }
+          @media screen and (min-width: $desktop) {
+            width: auto;
+            margin-top: 0px;
+          }
         }
 
         &:nth-of-type(3) {
           width: 160px;
           margin-top: 25px;
+          @media screen and (min-width: $about-break) {
+            width: 55%;
+            margin-top: 40px;
+          }
+          @media screen and (min-width: $desktop) {
+            width: auto;
+            margin-top: 0px;
+          }
         }
         &:last-of-type {
           width: 140px;
           margin-top: 25px;
+          @media screen and (min-width: $about-break) {
+            width: auto;
+            margin-top: 40px;
+          }
+          @media screen and (min-width: $desktop) {
+            width: auto;
+            margin-top: 0px;
+          }
+        }
+
+        @media screen and (min-width: $about-break) {
+          // width: 50%;
         }
       }
     }

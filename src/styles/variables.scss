@@ -6,7 +6,8 @@ $dark-gray: #272a2a;
 $medium-gray: #575959;
 $light-gray: #808080;
 $pale-gray: #c4c4c4;
-$bg: #0b1515;
+$bg: #151515;
+$bg0: #0b1515;
 $bg1: #0e1212;
 $bg2: #2a2d5a;
 
@@ -21,3 +22,10 @@ $accent2: #fffe57; //bright yellow
 $accent3: #050505; //pale purple
 $accent4: #adfcd2; //pastel green
 $accent5: #87e0fe; //sky blue
+
+$tablet-min: 426px;
+$about-break: 515px;
+$home-break: 615px;
+$tablet-max: 768px;
+$laptop-min: 1024px;
+$desktop: 1440px;

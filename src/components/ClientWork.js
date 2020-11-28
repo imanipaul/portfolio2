@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import att from "../assets/att.png";
-import hulu from "../assets/shape-the-future.png";
+import att_full from "../assets/att-full.png";
 import hsbc from "../assets/hsbc.png";
-import jh from "../assets/jh.png";
-import jh2 from "../assets/JH-computer.png";
+import hsbc_full from "../assets/hsbc-full.png";
+import jh from "../assets/JH-computer.png";
+import jh_full from "../assets/jh-full.png";
 import "../styles/ClientWork.scss";
 import Tag from "./Tag";
 
@@ -11,6 +12,20 @@ import { FiGithub } from "react-icons/fi";
 import { VscLinkExternal } from "react-icons/vsc";
 
 export default function ClientWork() {
+  const [size, setSize] = useState(
+    window.innerWidth < 1024 ? "mobile" : "desktop"
+  );
+
+  const handleResize = () => {
+    setSize(window.innerWidth < 1024 ? "mobile" : "desktop");
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
   return (
     <section className="client-work">
       <div className="client-header">
@@ -39,10 +54,16 @@ export default function ClientWork() {
               />
             </div>
           </div>
-          <img src={jh2} alt="project screenshot" />
+          <img
+            src={size === "desktop" ? jh_full : jh}
+            alt="project screenshot"
+          />
         </div>
         <div className="project right">
-          <img src={att} alt="project screenshot" />
+          <img
+            src={size === "desktop" ? att_full : att}
+            alt="project screenshot"
+          />
           <div className="project-info">
             <h5>AT&T Forces of Change</h5>
             <p>
@@ -85,7 +106,10 @@ export default function ClientWork() {
               />
             </div>
           </div>
-          <img src={hsbc} alt="project screenshot" />
+          <img
+            src={size === "desktop" ? hsbc_full : hsbc}
+            alt="project screenshot"
+          />
         </div>
       </div>
     </section>
