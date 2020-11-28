@@ -52,5 +52,9 @@
     background-color: transparent;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+
+    &:hover {
+      background-color: rgba($green-accent, 0.1);
+    }
   }
 }
