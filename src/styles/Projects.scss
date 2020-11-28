@@ -4,10 +4,19 @@
 .projects {
   display: flex;
   flex-direction: column;
-  background-color: #151515;
+  // background-color: #151515;
+  background: rgb(21, 21, 21);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 21, 21, 1) 0%,
+    rgba(21, 21, 21, 1) 91%,
+    rgba(21, 21, 21, 0) 100%
+  );
   align-items: center;
   justify-content: center;
   padding: 140px 0px;
+  // margin-bottom: 200px;
+  // border-bottom: 1px solid red;
 
   .projects-header {
     width: 300px;
@@ -40,6 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    // margin-bottom: 100px;
 
     @media screen and (min-width: $tablet-min) {
       width: 80%;
