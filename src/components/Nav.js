@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import logo from "../assets/Logo.png";
 import "../styles/Nav.scss";
 
@@ -7,8 +7,22 @@ import { BsCodeSlash, BsPerson } from "react-icons/bs";
 import { BiCodeCurly } from "react-icons/bi";
 
 export default function Nav() {
+  let navRef = useRef(null);
+
+  let prevScrollPos = window.pageYOffset;
+
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      navRef.current.style.top = "0";
+    } else {
+      navRef.current.style.top = "-100px";
+    }
+    prevScrollPos = currentScrollPos;
+  };
+
   return (
-    <nav>
+    <nav ref={navRef}>
       <div className="menu">
         <p>About</p>
         <p>Work</p>

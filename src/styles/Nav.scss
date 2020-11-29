@@ -9,6 +9,8 @@ nav {
   align-items: center;
   justify-content: flex-end;
   position: fixed;
+  top: 0;
+  transition: top 0.8s;
 
   .menu {
     display: flex;
