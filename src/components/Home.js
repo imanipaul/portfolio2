@@ -29,7 +29,9 @@ export default function Home() {
           Creative&nbsp;Problem&nbsp;Solver.
         </h2>
       </div>
-      <button>View my work</button>
+      <a href="#">
+        <span></span>
+      </a>
       <Particles options={particlesOptions} />
     </section>
   );
