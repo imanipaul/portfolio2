@@ -10,10 +10,12 @@ export default function Nav() {
   return (
     <nav>
       <div className="menu">
-        {/* <p>About</p>
+        <p>About</p>
         <p>Work</p>
         <p>Projects</p>
-        <p>Contact</p> */}
+        <p>Contact</p>
+      </div>
+      {/* <div className="menu">
 
         <div>
           <BsPerson size={"1.5em"} />
@@ -32,7 +34,7 @@ export default function Nav() {
           <AiOutlineMail size={"1.5em"} title={"contact"} />
           <p>contact</p>
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 }
