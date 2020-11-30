@@ -16,7 +16,9 @@ export default function Nav() {
   let workRef = useRef(null);
   let projectRef = useRef(null);
   let menuRef = useRef(null);
-  let [size, setSize] = useState("");
+  let [size, setSize] = useState(
+    window.innerWidth < 768 ? "mobile" : "desktop"
+  );
   let [mobileNavExpanded, setMobileNavExpanded] = useState(false);
 
   useEffect(() => {
