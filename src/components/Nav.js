@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import logo from "../assets/Logo.png";
+import React, { useEffect, useRef, useState } from "react";
+import logo from "../assets/logo.svg";
+import Logo from "./Logo";
 import "../styles/Nav.scss";
 
 import { AiOutlineMail } from "react-icons/ai";
@@ -8,22 +9,38 @@ import { BiCodeCurly } from "react-icons/bi";
 
 export default function Nav() {
   let navRef = useRef(null);
+  let [size, setSize] = useState("");
+
+  useEffect(() => {
+    window.addEventListener("resize", function () {
+      window.innerWidth < 768 ? setSize("mobile") : setSize("desktop");
+    });
+  });
 
   let prevScrollPos = window.pageYOffset;
 
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
-    if (prevScrollPos > currentScrollPos) {
-      navRef.current.style.top = "0";
+
+    if (size === "mobile" && currentScrollPos === 0) {
+      navRef.current.style.bottom = "-100px";
+    } else if (prevScrollPos > currentScrollPos) {
+      size === "desktop"
+        ? (navRef.current.style.top = "0")
+        : (navRef.current.style.bottom = "0");
     } else {
-      navRef.current.style.top = "-100px";
+      size === "desktop"
+        ? (navRef.current.style.top = "-100px")
+        : (navRef.current.style.bottom = "-100px");
     }
     prevScrollPos = currentScrollPos;
   };
 
   return (
     <nav ref={navRef}>
-      <div className="menu">
+      {/* <img src={logo} alt="logo" /> */}
+      <Logo fill="#fff" class="logo " />
+      <div className="menu ">
         <p>About</p>
         <p>Work</p>
         <p>Projects</p>

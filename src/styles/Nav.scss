@@ -10,12 +10,45 @@ nav {
   justify-content: flex-end;
   position: fixed;
   z-index: 1000;
-  top: 0;
-  transition: top 0.8s;
-  background-color: rgba($bg, 0.85);
+  background-color: red;
+  transition: bottom 0.8s;
+  bottom: -100px;
+
+  @media screen and (min-width: $tablet-min) {
+    transition: top 0.8s;
+    top: 0;
+    background-color: rgba($bg, 0.85);
+  }
+
+  .logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 3%;
+    display: none;
+    @media screen and (min-width: $tablet-max) {
+      path {
+        &:first-of-type {
+          fill: $purple-accent;
+        }
+        // fill: red;
+        // &:nth-of-type(2) {
+        //   fill: $purple-accent;
+        // }
+      }
+
+      rect {
+        fill: $purple-accent;
+      }
+    }
+
+    @media screen and (min-width: $tablet-min) {
+      display: block;
+    }
+  }
 
   .menu {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -55,6 +88,10 @@ nav {
       p {
         margin: 0px;
       }
+    }
+
+    @media screen and (min-width: $tablet-min) {
+      display: flex;
     }
   }
 }
