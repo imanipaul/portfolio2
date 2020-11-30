@@ -3,13 +3,19 @@ import logo from "../assets/logo.svg";
 import Logo from "./Logo";
 import "../styles/Nav.scss";
 
-import { AiOutlineMail, AiOutlineMenuFold } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { BsCodeSlash, BsPerson } from "react-icons/bs";
 import { BiCodeCurly } from "react-icons/bi";
 import { CgMenu } from "react-icons/cg";
 
 export default function Nav() {
   let navRef = useRef(null);
+  let contactRef = useRef(null);
+  let contactRef2 = useRef(null);
+  let aboutRef = useRef(null);
+  let workRef = useRef(null);
+  let projectRef = useRef(null);
+  let menuRef = useRef(null);
   let [size, setSize] = useState("");
   let [mobileNavExpanded, setMobileNavExpanded] = useState(false);
 
@@ -19,6 +25,13 @@ export default function Nav() {
     });
   });
 
+  function resetNav() {
+    navRef.current.style.bottom = "-100px";
+
+    setTimeout(() => setMobileNavExpanded(false), 300);
+    // setMobileNavExpanded(false);
+  }
+
   let prevScrollPos = window.pageYOffset;
 
   window.onscroll = function () {
@@ -26,21 +39,19 @@ export default function Nav() {
 
     if (size === "mobile" && currentScrollPos === 0) {
       navRef.current.style.bottom = "-100px";
+      setMobileNavExpanded(false);
     } else if (prevScrollPos > currentScrollPos) {
       size === "desktop"
         ? (navRef.current.style.top = "0")
         : (navRef.current.style.bottom = "0");
     } else {
-      size === "desktop"
-        ? (navRef.current.style.top = "-100px")
-        : (navRef.current.style.bottom = "-100px");
+      size === "desktop" ? (navRef.current.style.top = "-100px") : resetNav();
     }
     prevScrollPos = currentScrollPos;
   };
 
   return (
     <nav ref={navRef}>
-      {/* <img src={logo} alt="logo" /> */}
       <Logo fill="#fff" class="logo" />
       <div className="menu ">
         <p>About</p>
@@ -50,35 +61,50 @@ export default function Nav() {
       </div>
 
       <section className="mobile-nav">
-        <div className={`item ${mobileNavExpanded ? "hide" : "show"}`}>
+        <div
+          ref={contactRef}
+          className={`item ${mobileNavExpanded ? "hide" : "show"}`}
+        >
           <AiOutlineMail />
           <p>Contact</p>
         </div>
-        <div className={`item ${mobileNavExpanded ? "show" : "hide"}`}>
+        <div
+          ref={aboutRef}
+          className={`item ${mobileNavExpanded ? "show" : "hide"}`}
+        >
           <BsPerson />
           <p>About</p>
         </div>
-        <div className={`item ${mobileNavExpanded ? "show" : "hide"}`}>
+        <div
+          ref={workRef}
+          className={`item ${mobileNavExpanded ? "show" : "hide"}`}
+        >
           <BsCodeSlash />
           <p>Work</p>
         </div>
         <p className="name">Imani Paul</p>
 
         <div
+          ref={menuRef}
           className={`item ${mobileNavExpanded ? "hide" : "show"}`}
           onClick={() => {
-            console.log(mobileNavExpanded);
             setMobileNavExpanded(true);
           }}
         >
           <CgMenu />
           <p>Menu</p>
         </div>
-        <div className={`item ${mobileNavExpanded ? "show" : "hide"}`}>
+        <div
+          ref={projectRef}
+          className={`item ${mobileNavExpanded ? "show" : "hide"}`}
+        >
           <BiCodeCurly />
           <p>Projects</p>
         </div>
-        <div className={`item ${mobileNavExpanded ? "show" : "hide"}`}>
+        <div
+          ref={contactRef2}
+          className={`item ${mobileNavExpanded ? "show" : "hide"}`}
+        >
           <AiOutlineMail />
           <p>Contact</p>
         </div>
