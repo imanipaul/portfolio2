@@ -38,8 +38,17 @@ export default function Nav() {
 
   window.onscroll = function () {
     let currentScrollPos = window.pageYOffset;
+    let app = document.querySelector(".App");
+    let contact = document.querySelector(".contact");
 
     if (size === "mobile" && currentScrollPos === 0) {
+      navRef.current.style.bottom = "-100px";
+      setMobileNavExpanded(false);
+    } else if (
+      size === "mobile" &&
+      window.innerHeight + currentScrollPos >=
+        app.offsetHeight - contact.offsetHeight
+    ) {
       navRef.current.style.bottom = "-100px";
       setMobileNavExpanded(false);
     } else if (prevScrollPos > currentScrollPos) {
