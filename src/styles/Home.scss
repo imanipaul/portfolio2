@@ -138,7 +138,18 @@
     transition: opacity 0.3s;
 
     &:hover {
-      opacity: 0.5;
+      // opacity: 0.5;
+      // color: red;
+
+      span {
+        background-color: white;
+        color: black;
+
+        &::after {
+          border-bottom: 1px solid black;
+          border-left: 1px solid black;
+        }
+      }
     }
 
     span {
@@ -151,7 +162,7 @@
       border: 1px solid white;
       border-radius: 100%;
       box-sizing: border-box;
-      // background-color: $bg;
+      transition: background-color 0.3s, border 0.3s;
 
       &::after {
         position: absolute;
