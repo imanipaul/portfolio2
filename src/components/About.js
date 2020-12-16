@@ -19,7 +19,7 @@ export default function About() {
     <section className="about">
       <div className="about-content">
         <h4>about me</h4>
-        <Fade bottom>
+        <Fade bottom cascade>
           <p ref={graphRef}>
             I’m currently a web developer at{" "}
             <span>Courageous Studios, WarnerMedia</span>. I am a software
@@ -27,24 +27,21 @@ export default function About() {
           </p>
         </Fade>
 
-        <Fade bottom delay={100}>
-          <p>
-            As a software engineer I enjoy building things that improve people’s
-            lives. Whether thats a client or the end user, I enjoy bridging the
-            gap between technical issues and business needs.
-          </p>
-        </Fade>
-        <Fade bottom delay={200}>
-          <p>
-            <span>When I’m not at my computer</span>, I enjoy reading sci-fi
-            novels, knitting scarves and blankets for my friends and family, and
-            baking sweets!
-          </p>
-        </Fade>
+        <p>
+          As a software engineer I enjoy building things that improve people’s
+          lives. Whether thats a client or the end user, I enjoy bridging the
+          gap between technical issues and business needs.
+        </p>
+        <p>
+          <span>When I’m not at my computer</span>, I enjoy reading sci-fi
+          novels, knitting scarves and blankets for my friends and family, and
+          baking sweets!
+        </p>
+        {/* </Fade> */}
 
-        <Fade delay={500}>
-          <img src={headshot} alt="headshot" />
-        </Fade>
+        {/* <Fade bottom delay={1000}> */}
+        <img src={headshot} alt="headshot" />
+        {/* </Fade> */}
       </div>
     </section>
   );
