@@ -13,7 +13,7 @@
     width: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     text-align: left;
 
     @media screen and (min-width: $tablet-min) {
@@ -24,6 +24,17 @@
       // align-self: flex-start;
       // margin-top: 140px;
       width: 70%;
+    }
+
+    .about-info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // justify-content: space-evenly;
+
+      .all-copy {
+        max-width: 550px;
+      }
     }
 
     h4 {
@@ -37,6 +48,7 @@
       align-self: flex-start;
       color: $purple-accent;
       margin: 0px;
+      margin-bottom: 24px;
 
       @media screen and (min-width: $tablet-min) {
         width: 80%;
@@ -54,31 +66,27 @@
       font-family: "Roboto", sans-serif;
       font-weight: 400;
       width: 100%;
+      line-height: 26px;
 
-      &:first-of-type {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        span {
-          color: white;
-          font-weight: 500;
+      // margin-top: 20px;
+      margin-bottom: 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      span {
+        color: white;
+        font-weight: 500;
+        cursor: default;
+
+        &.underline {
           text-decoration: underline;
-        }
-        @media screen and (min-width: $tablet-min) {
-          margin-bottom: 25px;
+          cursor: auto;
         }
       }
-
-      &:last-of-type {
-        margin-top: 20px;
-        margin-bottom: 60px;
-        span {
-          color: white;
-          font-weight: 500;
-        }
-
-        @media screen and (min-width: $tablet-min) {
-          margin-top: 25px;
-        }
+      @media screen and (min-width: $tablet-min) {
+        margin-bottom: 25px;
       }
 
       @media screen and (min-width: $tablet-min) {
@@ -89,12 +97,17 @@
     img {
       width: 147px;
       height: 147px;
+      margin-top: 30px;
+      align-self: center;
 
       @media screen and (min-width: $tablet-min) {
-        width: 270px;
+        width: 300px;
         height: auto;
         border-radius: 50%;
-        margin-top: 50px;
+        align-self: flex-start;
+        margin: 0px;
+        margin-left: auto;
+        // margin-top: 50px;
         transition: border-radius 1s ease;
         filter: grayscale(30%);
 
