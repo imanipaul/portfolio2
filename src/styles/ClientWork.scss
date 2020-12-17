@@ -32,7 +32,7 @@
 
     p {
       font-family: "Roboto", sans-serif;
-      font-weight: 200;
+      font-weight: 300;
       color: white;
       margin: 0px;
     }
@@ -63,6 +63,7 @@
           img {
             filter: grayscale(0);
             opacity: 1;
+            transform: scale(1.05);
           }
         }
       }
@@ -100,6 +101,11 @@
           color: white;
           margin: 0px;
           margin-top: 20px;
+          line-height: 20px;
+
+          .external {
+            padding-left: 20px;
+          }
 
           @media screen and (min-width: $laptop-min) {
             font-size: 22px;
@@ -137,7 +143,7 @@
           margin-top: 35px;
 
           .external {
-            margin-left: 25px;
+            margin-left: 0px;
           }
         }
       }
@@ -182,6 +188,10 @@
           .tag-container {
             justify-content: flex-end;
           }
+        }
+
+        .external {
+          padding-right: 20px;
         }
 
         img {

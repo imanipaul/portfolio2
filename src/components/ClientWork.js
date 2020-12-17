@@ -37,7 +37,20 @@ export default function ClientWork() {
         <Fade damping={0.5} cascade triggerOnce={true}>
           <div className="project">
             <div className="project-info">
-              <h5>John Hancock Hub</h5>
+              <h5>
+                John Hancock Hub{" "}
+                <a
+                  href="https://www.cnn.com/interactive/ATT/ForcesOfChange/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external"
+                    size={"0.8em"}
+                  />
+                </a>
+              </h5>
               <p>
                 Responsive landing page for the Forces of Change video series.
               </p>
@@ -46,15 +59,16 @@ export default function ClientWork() {
                 <Tag title={"React.js"} />
                 <Tag title={"YouTube API"} />
               </div>
-
+              {/* 
               <div className="icons">
-                <FiGithub color={"white"} size={"1.5em"} />
-                <VscLinkExternal
-                  color={"white"}
-                  className="external"
-                  size={"1.5em"}
-                />
-              </div>
+                <a href="http://sponsorcontent.cnn.com/interactive/john-hancock/generations-of-wealth/">
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external"
+                    size={"1.5em"}
+                  />
+                </a>
+              </div> */}
             </div>
             <img
               src={size === "desktop" ? jh_full : jh}
@@ -67,7 +81,21 @@ export default function ClientWork() {
               alt="project screenshot"
             />
             <div className="project-info">
-              <h5>AT&T Forces of Change</h5>
+              <h5>
+                {" "}
+                <a
+                  href="https://www.cnn.com/interactive/ATT/ForcesOfChange/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external"
+                    size={"0.8em"}
+                  />
+                </a>{" "}
+                AT&T Forces of Change{" "}
+              </h5>
               <p>
                 Responsive landing page for the Forces of Change video series.
               </p>
@@ -77,19 +105,33 @@ export default function ClientWork() {
                 <Tag title={"YouTube API"} />
               </div>
 
-              <div className="icons">
-                <FiGithub color={"white"} size={"1.5em"} />
-                <VscLinkExternal
-                  color={"white"}
-                  className="external"
-                  size={"1.5em"}
-                />
-              </div>
+              {/* <div className="icons">
+                <a href="https://www.cnn.com/interactive/ATT/ForcesOfChange/">
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external"
+                    size={"1.5em"}
+                  />
+                </a>
+              </div> */}
             </div>
           </div>
           <div className="project">
             <div className="project-info">
-              <h5>HSBC Articles</h5>
+              <h5>
+                HSBC Articles{" "}
+                <a
+                  href="https://www.cnn.com/interactive/ATT/ForcesOfChange/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external"
+                    size={"0.8em"}
+                  />
+                </a>
+              </h5>
               <p>
                 Responsive landing page for the Forces of Change video series.
               </p>
@@ -99,14 +141,15 @@ export default function ClientWork() {
                 <Tag title={"YouTube API"} />
               </div>
 
-              <div className="icons">
-                <FiGithub color={"white"} size={"1.5em"} />
-                <VscLinkExternal
-                  color={"white"}
-                  className="external"
-                  size={"1.5em"}
-                />
-              </div>
+              {/* <div className="icons">
+                <a href="https://www.cnn.com/interactive/HSBC/SecuringTheWorld/">
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external"
+                    size={"1.5em"}
+                  />
+                </a>
+              </div> */}
             </div>
             <img
               src={size === "desktop" ? hsbc_full : hsbc}
