@@ -8,12 +8,12 @@ import "../styles/About.scss";
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="about-content">
         <h4>about me</h4>
         <div className="about-info">
           <div className="all-copy">
-            <Fade direction="up" cascade damping={0.25} triggerOnce={true}>
+            <Fade direction="up" cascade damping={0.25}>
               <p>Hi! I'm Imani, a software engineer based in New York.</p>
               <p>
                 As a software engineer I enjoy building things that improve

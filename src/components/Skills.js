@@ -11,12 +11,7 @@ export default function Skills() {
           <div className="list">
             <h5>languages</h5>
             <ul>
-              <Fade
-                direction="up"
-                cascade
-                damping={0.25}
-                // triggerOnce={true}
-              >
+              <Fade direction="up" cascade damping={0.25} triggerOnce={true}>
                 <li>Javascript (ES6+)</li>
                 <li>HTML5</li>
                 <li>CSS/Sass</li>
@@ -36,7 +31,7 @@ export default function Skills() {
                 cascade
                 damping={0.25}
                 delay={500}
-                // triggerOnce={true}
+                triggerOnce={true}
               >
                 <li>Command Line</li>
                 <li>Git & Github</li>
@@ -58,7 +53,7 @@ export default function Skills() {
                 cascade
                 damping={0.25}
                 delay={1000}
-                // triggerOnce={true}
+                triggerOnce={true}
               >
                 <li>React</li>
                 <li>Vue</li>
@@ -76,7 +71,7 @@ export default function Skills() {
                 cascade
                 damping={0.25}
                 delay={1500}
-                // triggerOnce={true}
+                triggerOnce={true}
               >
                 <li>Photoshop</li>
                 <li>Sketch</li>

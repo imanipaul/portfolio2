@@ -13,18 +13,13 @@ import "../styles/Projects.scss";
 
 export default function Projects() {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="projects-header">
         <h4 className="title">projects</h4>
         <p className="subtitle">Other cool things I've worked on!</p>
       </div>
       <div className="all-projects">
-        <Fade
-          direction="up"
-          cascade
-          damping={0.25}
-          // triggerOnce={true}
-        >
+        <Fade direction="up" cascade damping={0.25} triggerOnce={true}>
           <div className="project-card">
             <h5>Speed Type</h5>
             <p>Single player speed typing game made with multiple levels.</p>

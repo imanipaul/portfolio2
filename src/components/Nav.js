@@ -3,6 +3,8 @@ import logo from "../assets/logo.svg";
 import Logo from "./Logo";
 import "../styles/Nav.scss";
 
+import { Link } from "react-scroll";
+
 import { AiOutlineMail } from "react-icons/ai";
 import { BsCodeSlash, BsPerson } from "react-icons/bs";
 import { BiCodeCurly } from "react-icons/bi";
@@ -65,10 +67,18 @@ export default function Nav() {
     <nav ref={navRef}>
       <Logo fill="#fff" class="logo" />
       <div className="menu ">
-        <p>About</p>
-        <p>Work</p>
-        <p>Projects</p>
-        <p>Contact</p>
+        <Link to="about" smooth={true} isDynamic={true} spy={true}>
+          About
+        </Link>
+        <Link to="work" smooth={true} isDynamic={true} spy={true}>
+          Work
+        </Link>
+        <Link to="projects" smooth={true} isDynamic={true} spy={true}>
+          Projects
+        </Link>
+        <Link to="contact" smooth={true} isDynamic={true} spy={true}>
+          Contact
+        </Link>
       </div>
 
       <section className="mobile-nav">
