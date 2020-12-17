@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.90a5f2c8.chunk.css",
+    "main.js": "/static/js/main.61f37f98.chunk.js",
+    "main.js.map": "/static/js/main.61f37f98.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f97a0e8f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f97a0e8f.js.map",
+    "static/js/2.4ca4d90f.chunk.js": "/static/js/2.4ca4d90f.chunk.js",
+    "static/js/2.4ca4d90f.chunk.js.map": "/static/js/2.4ca4d90f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.90a5f2c8.chunk.css.map": "/static/css/main.90a5f2c8.chunk.css.map",
+    "static/js/2.4ca4d90f.chunk.js.LICENSE.txt": "/static/js/2.4ca4d90f.chunk.js.LICENSE.txt",
+    "static/media/JH-computer.666475f4.png": "/static/media/JH-computer.666475f4.png",
+    "static/media/Footer.scss": "/static/media/RobotoMono-Medium.e04fa2d8.ttf",
+    "static/media/atm.426c915e.png": "/static/media/atm.426c915e.png",
+    "static/media/att-full.269b447b.png": "/static/media/att-full.269b447b.png",
+    "static/media/att.efe63efe.png": "/static/media/att.efe63efe.png",
+    "static/media/chumleys.870671c4.png": "/static/media/chumleys.870671c4.png",
+    "static/media/ensemble.33ec3c6d.png": "/static/media/ensemble.33ec3c6d.png",
+    "static/media/headshot.ad54b281.png": "/static/media/headshot.ad54b281.png",
+    "static/media/hsbc-full.30fa99dc.png": "/static/media/hsbc-full.30fa99dc.png",
+    "static/media/hsbc.5395d121.png": "/static/media/hsbc.5395d121.png",
+    "static/media/jh-full.fa848a19.png": "/static/media/jh-full.fa848a19.png",
+    "static/media/logo.a512d044.svg": "/static/media/logo.a512d044.svg",
+    "static/media/recollect.fc82989a.png": "/static/media/recollect.fc82989a.png",
+    "static/media/speedtype.e97db02d.png": "/static/media/speedtype.e97db02d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f97a0e8f.js",
+    "static/js/2.4ca4d90f.chunk.js",
+    "static/css/main.90a5f2c8.chunk.css",
+    "static/js/main.61f37f98.chunk.js"
+  ]
+}
