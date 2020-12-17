@@ -1,24 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 import particlesOptions from "../particles.json";
+import { Link } from "react-scroll";
 
 import "../styles/Home.scss";
 
 export default function Home() {
-  // const [sectionHeight, setSectionHeight] = useState(window.innerHeight);
-
-  // const handleResize = () => {
-  //   setSectionHeight(window.innerHeight);
-
-  //   console.log("section height is", sectionHeight);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
-
   return (
     <section className="home" style={{ height: window.innerHeight }}>
       <div>
@@ -29,9 +16,9 @@ export default function Home() {
           Creative&nbsp;Problem&nbsp;Solver.
         </h2>
       </div>
-      <a href="#">
+      <Link to="about" smooth={true}>
         <span></span>
-      </a>
+      </Link>
       <Particles options={particlesOptions} />
     </section>
   );

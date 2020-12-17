@@ -19,7 +19,7 @@ export default function Projects() {
         <p className="subtitle">Other cool things I've worked on!</p>
       </div>
       <div className="all-projects">
-        <Fade direction="up" cascade damping={0.25} triggerOnce={true}>
+        <Fade direction="up" cascade damping={0.1} triggerOnce={true}>
           <div className="project-card">
             <h5>Speed Type</h5>
             <p>Single player speed typing game made with multiple levels.</p>

@@ -18,8 +18,14 @@ footer {
     .icon {
       color: white;
 
-      &:hover {
-        color: $purple-accent;
+      @media (hover: hover) {
+        &:hover {
+          color: $purple-accent;
+        }
+      }
+
+      &:active {
+        color: $purple-accent-active;
       }
     }
   }
