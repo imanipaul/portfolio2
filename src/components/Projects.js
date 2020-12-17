@@ -24,8 +24,9 @@ export default function Projects() {
             <h5>Speed Type</h5>
             <p>Single player speed typing game made with multiple levels.</p>
             <div className="tag-container">
-              <Tag title={"React.js"} />
-              <Tag title={"YouTube API"} />
+              <Tag title={"Vanilla JS"} />
+              <Tag title={"HTML"} />
+              <Tag title={"CSS"} />
             </div>
             <img src={speedtype} alt="project screenshot" />
           </div>
@@ -35,7 +36,8 @@ export default function Projects() {
             <p>Full stack inventory app for household essentials.</p>
             <div className="tag-container">
               <Tag title={"React.js"} />
-              <Tag title={"YouTube API"} />
+              <Tag title={"PostgreSQL"} />
+              <Tag title={"Rails"} />
             </div>
             <img src={recollect} alt="project screenshot" />
           </div>
@@ -48,7 +50,7 @@ export default function Projects() {
             </p>
             <div className="tag-container">
               <Tag title={"React.js"} />
-              <Tag title={"YouTube API"} />
+              <Tag title={"Rails"} />
             </div>
             <img src={ensemble} alt="project screenshot" />
           </div>
@@ -61,7 +63,7 @@ export default function Projects() {
             </p>
             <div className="tag-container">
               <Tag title={"React.js"} />
-              <Tag title={"YouTube API"} />
+              <Tag title={"Sketch"} />
             </div>
             <img src={chumleys} alt="project screenshot" />
           </div>
@@ -71,7 +73,7 @@ export default function Projects() {
             <p>Popular music search engine using React and LastFM API</p>
             <div className="tag-container">
               <Tag title={"React.js"} />
-              <Tag title={"YouTube API"} />
+              <Tag title={"AudioDB API"} />
             </div>
             <img src={atm} alt="project screenshot" />
           </div>
