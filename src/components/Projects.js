@@ -26,10 +26,18 @@ export default function Projects() {
           <div className="project-card">
             <h5>
               Speed Type{" "}
-              <a href="#">
+              <a
+                href="https://imanipaul.github.io/speed-type/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <VscLinkExternal className="external" size={"0.8em"} />
               </a>
-              <a href="#">
+              <a
+                href="https://github.com/imanipaul/speed-type"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiGithub className="github" size={"0.8em"} />
               </a>
             </h5>
@@ -44,10 +52,10 @@ export default function Projects() {
           <div className="project-card">
             <h5>
               Portfolio V1{" "}
-              <a href="#">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <VscLinkExternal className="external" size={"0.8em"} />
               </a>
-              <a href="#">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FiGithub className="github" size={"0.8em"} />
               </a>
             </h5>
@@ -62,10 +70,18 @@ export default function Projects() {
           <div className="project-card">
             <h5>
               Recollect{" "}
-              <a href="#">
+              <a
+                href="http://recollect.surge.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <VscLinkExternal className="external" size={"0.8em"} />
               </a>
-              <a href="#">
+              <a
+                href="https://github.com/imanipaul/ReCollect"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiGithub className="github" size={"0.8em"} />
               </a>
             </h5>
@@ -81,10 +97,18 @@ export default function Projects() {
           <div className="project-card">
             <h5>
               Ensemble{" "}
-              <a href="#">
+              <a
+                href="http://ensemble-ga.surge.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <VscLinkExternal className="external" size={"0.8em"} />
               </a>
-              <a href="#">
+              <a
+                href="https://github.com/imanipaul/Ensemble"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiGithub className="github" size={"0.8em"} />
               </a>
             </h5>
@@ -102,10 +126,18 @@ export default function Projects() {
           <div className="project-card">
             <h5>
               Chumley's{" "}
-              <a href="#">
+              <a
+                href="http://chumleys-app.surge.sh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <VscLinkExternal className="external" size={"0.8em"} />
               </a>
-              <a href="#">
+              <a
+                href="https://github.com/imanipaul/Chumleys"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiGithub className="github" size={"0.8em"} />
               </a>
             </h5>
@@ -123,10 +155,18 @@ export default function Projects() {
           <div className="project-card">
             <h5>
               All Things Music{" "}
-              <a href="#">
+              <a
+                href="https://all-things-music.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <VscLinkExternal className="external" size={"0.8em"} />
               </a>
-              <a href="#">
+              <a
+                href="https://github.com/imanipaul/all-things-music"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiGithub className="github" size={"0.8em"} />
               </a>
             </h5>
