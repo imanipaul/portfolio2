@@ -65,6 +65,7 @@
       background-color: #202022;
       position: relative;
       overflow: hidden;
+      cursor: default;
 
       @media screen and (min-width: $tablet-min) {
         // margin-top: 3vw;
@@ -81,11 +82,17 @@
           opacity: 1;
           top: 60%;
         }
+
+        .external,
+        .github {
+          color: white;
+        }
       }
 
       h5 {
         font-family: "Roboto", sans-serif;
         font-size: 20px;
+        line-height: 20px;
         font-weight: 500;
         color: white;
         text-align: left;
@@ -93,6 +100,21 @@
         margin-top: 25px;
         margin-left: 25px;
         margin-bottom: 12px;
+        position: relative;
+
+        .external,
+        .github {
+          position: absolute;
+          bottom: 0px;
+          right: 20px;
+          // padding-left: 10px;
+          color: $light-gray;
+        }
+
+        .github {
+          right: 50px;
+          // padding-left: 40px;
+        }
       }
 
       p {

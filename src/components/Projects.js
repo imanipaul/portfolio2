@@ -1,11 +1,14 @@
 import React from "react";
 import Tag from "./Tag";
-import jh2 from "../assets/JH-computer.png";
+import portfoliov1 from "../assets/portfoliov1.png";
 import atm from "../assets/atm.png";
 import chumleys from "../assets/chumleys.png";
 import ensemble from "../assets/ensemble.png";
 import recollect from "../assets/recollect.png";
 import speedtype from "../assets/speedtype.png";
+
+import { VscLinkExternal } from "react-icons/vsc";
+import { FiGithub } from "react-icons/fi";
 
 import { Fade } from "react-awesome-reveal";
 
@@ -21,7 +24,15 @@ export default function Projects() {
       <div className="all-projects">
         <Fade direction="up" cascade damping={0.1} triggerOnce={true}>
           <div className="project-card">
-            <h5>Speed Type</h5>
+            <h5>
+              Speed Type{" "}
+              <a href="#">
+                <VscLinkExternal className="external" size={"0.8em"} />
+              </a>
+              <a href="#">
+                <FiGithub className="github" size={"0.8em"} />
+              </a>
+            </h5>
             <p>Single player speed typing game made with multiple levels.</p>
             <div className="tag-container">
               <Tag title={"Vanilla JS"} />
@@ -30,9 +41,34 @@ export default function Projects() {
             </div>
             <img src={speedtype} alt="project screenshot" />
           </div>
+          <div className="project-card">
+            <h5>
+              Portfolio V1{" "}
+              <a href="#">
+                <VscLinkExternal className="external" size={"0.8em"} />
+              </a>
+              <a href="#">
+                <FiGithub className="github" size={"0.8em"} />
+              </a>
+            </h5>
+            <p>The first iteration of my portfolio!</p>
+            <div className="tag-container">
+              <Tag title={"React.js"} />
+              <Tag title={"Smooth Scroll"} />
+            </div>
+            <img src={portfoliov1} alt="project screenshot" />
+          </div>
 
           <div className="project-card">
-            <h5>Recollect</h5>
+            <h5>
+              Recollect{" "}
+              <a href="#">
+                <VscLinkExternal className="external" size={"0.8em"} />
+              </a>
+              <a href="#">
+                <FiGithub className="github" size={"0.8em"} />
+              </a>
+            </h5>
             <p>Full stack inventory app for household essentials.</p>
             <div className="tag-container">
               <Tag title={"React.js"} />
@@ -43,7 +79,15 @@ export default function Projects() {
           </div>
 
           <div className="project-card">
-            <h5>Ensemble</h5>
+            <h5>
+              Ensemble{" "}
+              <a href="#">
+                <VscLinkExternal className="external" size={"0.8em"} />
+              </a>
+              <a href="#">
+                <FiGithub className="github" size={"0.8em"} />
+              </a>
+            </h5>
             <p>
               A full stack site for connecting with fellow students and
               instructors.
@@ -52,11 +96,19 @@ export default function Projects() {
               <Tag title={"React.js"} />
               <Tag title={"Rails"} />
             </div>
-            <img src={ensemble} alt="project screenshot" />
+            <img src={ensemble} alt="project screenshot" size={"0.8em"} />
           </div>
 
           <div className="project-card">
-            <h5>Chumley's</h5>
+            <h5>
+              Chumley's{" "}
+              <a href="#">
+                <VscLinkExternal className="external" size={"0.8em"} />
+              </a>
+              <a href="#">
+                <FiGithub className="github" size={"0.8em"} />
+              </a>
+            </h5>
             <p>
               Restaurant site redesign for local NYC eatery. Created through
               collaboration with UX designers.
@@ -69,7 +121,15 @@ export default function Projects() {
           </div>
 
           <div className="project-card">
-            <h5>All Things Music</h5>
+            <h5>
+              All Things Music{" "}
+              <a href="#">
+                <VscLinkExternal className="external" size={"0.8em"} />
+              </a>
+              <a href="#">
+                <FiGithub className="github" size={"0.8em"} />
+              </a>
+            </h5>
             <p>Popular music search engine using React and LastFM API</p>
             <div className="tag-container">
               <Tag title={"React.js"} />
