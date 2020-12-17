@@ -65,6 +65,7 @@
       }
 
       .list {
+        cursor: default;
         h5 {
           font-family: "Roboto Mono Regular";
           font-variant: small-caps;
@@ -84,6 +85,7 @@
           margin: 0px;
           padding: 0px;
           line-height: 22px;
+          width: fit-content;
           @media screen and (min-width: $about-break) {
             line-height: 25px;
           }
@@ -103,6 +105,12 @@
 
             @media screen and (min-width: $about-break) {
               font-size: 18px;
+            }
+
+            @media (hover: hover) {
+              &:hover {
+                color: $green-accent-hover;
+              }
             }
           }
         }
