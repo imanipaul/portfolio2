@@ -34,7 +34,7 @@ export default function ClientWork() {
         <p className="subtitle">Selected works developed for clients.</p>
       </div>
       <div className="all-projects">
-        <Fade damping={0.5} cascade>
+        <Fade damping={0.5} cascade triggerOnce={true}>
           <div className="project">
             <div className="project-info">
               <h5>John Hancock Hub</h5>

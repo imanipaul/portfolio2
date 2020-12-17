@@ -82,27 +82,39 @@ export default function Nav() {
       </div>
 
       <section className="mobile-nav">
-        <div
+        {/* <Link to="contact" smooth={true} isDynamic={true}> */}
+        <Link
           ref={contactRef}
           className={`item ${mobileNavExpanded ? "hide" : "show"}`}
+          to="contact"
+          smooth={true}
         >
           <AiOutlineMail />
           <p>Contact</p>
-        </div>
-        <div
+        </Link>
+        {/* </Link> */}
+        {/* <Link to="about" smooth={true} isDynamic={true} spy={true}> */}
+        <Link
           ref={aboutRef}
           className={`item ${mobileNavExpanded ? "show" : "hide"}`}
+          to="about"
+          smooth={true}
         >
           <BsPerson />
           <p>About</p>
-        </div>
-        <div
+        </Link>
+        {/* </Link> */}
+        {/* <Link to="work" smooth={true} isDynamic={true} spy={true}> */}
+        <Link
           ref={workRef}
           className={`item ${mobileNavExpanded ? "show" : "hide"}`}
+          to="work"
+          smooth={true}
         >
           <BsCodeSlash />
           <p>Work</p>
-        </div>
+        </Link>
+        {/* </Link> */}
         <p className="name">Imani Paul</p>
 
         <div
@@ -115,20 +127,28 @@ export default function Nav() {
           <CgMenu />
           <p>Menu</p>
         </div>
-        <div
+        {/* <Link to="projects" smooth={true} isDynamic={true} spy={true}> */}
+        <Link
           ref={projectRef}
           className={`item ${mobileNavExpanded ? "show" : "hide"}`}
+          to="projects"
+          smooth={true}
         >
           <BiCodeCurly />
           <p>Projects</p>
-        </div>
-        <div
+        </Link>
+        {/* </Link> */}
+        {/* <Link to="contact" smooth={true} isDynamic={true} spy={true}> */}
+        <Link
           ref={contactRef2}
           className={`item ${mobileNavExpanded ? "show" : "hide"}`}
+          to="contact"
+          smooth={true}
         >
           <AiOutlineMail />
           <p>Contact</p>
-        </div>
+        </Link>
+        {/* </Link> */}
       </section>
     </nav>
   );
