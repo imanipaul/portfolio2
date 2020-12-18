@@ -52,23 +52,15 @@ export default function ClientWork() {
                 </a>
               </h5>
               <p>
-                Responsive landing page for the Forces of Change video series.
+                Responsive suite of pages for John Hancock. Pages include full
+                width video pages, articles, and an infographic.
               </p>
 
               <div className="tag-container">
                 <Tag title={"React.js"} />
                 <Tag title={"YouTube API"} />
+                <Tag title={"Infographic"} />
               </div>
-              {/* 
-              <div className="icons">
-                <a href="http://sponsorcontent.cnn.com/interactive/john-hancock/generations-of-wealth/">
-                  <VscLinkExternal
-                    color={"white"}
-                    className="external"
-                    size={"1.5em"}
-                  />
-                </a>
-              </div> */}
             </div>
             <img
               src={size === "desktop" ? jh_full : jh}
@@ -98,22 +90,13 @@ export default function ClientWork() {
               </h5>
               <p>
                 Responsive landing page for the Forces of Change video series.
+                Continuously updated with new videos as they are created.
               </p>
 
               <div className="tag-container">
                 <Tag title={"React.js"} />
                 <Tag title={"YouTube API"} />
               </div>
-
-              {/* <div className="icons">
-                <a href="https://www.cnn.com/interactive/ATT/ForcesOfChange/">
-                  <VscLinkExternal
-                    color={"white"}
-                    className="external"
-                    size={"1.5em"}
-                  />
-                </a>
-              </div> */}
             </div>
           </div>
           <div className="project">
@@ -121,7 +104,7 @@ export default function ClientWork() {
               <h5>
                 HSBC Articles{" "}
                 <a
-                  href="https://www.cnn.com/interactive/ATT/ForcesOfChange/"
+                  href="https://www.cnn.com/interactive/HSBC/SecuringTheWorld"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -133,23 +116,15 @@ export default function ClientWork() {
                 </a>
               </h5>
               <p>
-                Responsive landing page for the Forces of Change video series.
+                Suite of responsive pages for HSBC campaign, including two
+                articles and a white paper. Features include custom image
+                slideshow, parallax image header, and embedded videos.
               </p>
 
               <div className="tag-container">
                 <Tag title={"React.js"} />
                 <Tag title={"YouTube API"} />
               </div>
-
-              {/* <div className="icons">
-                <a href="https://www.cnn.com/interactive/HSBC/SecuringTheWorld/">
-                  <VscLinkExternal
-                    color={"white"}
-                    className="external"
-                    size={"1.5em"}
-                  />
-                </a>
-              </div> */}
             </div>
             <img
               src={size === "desktop" ? hsbc_full : hsbc}
