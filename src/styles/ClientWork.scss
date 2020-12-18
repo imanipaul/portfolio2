@@ -46,10 +46,11 @@
       display: flex;
       flex-direction: row;
       min-height: 260px;
-      margin-top: 40px;
+      margin-top: 60px;
       position: relative;
 
       @media screen and (min-width: $about-break) {
+        margin-top: 80px;
         height: 300px;
         background: linear-gradient(
           90deg,
