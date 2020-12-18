@@ -5,11 +5,12 @@ import hsbc from "../assets/hsbc.png";
 import hsbc_full from "../assets/hsbc-full.png";
 import jh from "../assets/JH-computer.png";
 import jh_full from "../assets/jh-full.png";
+import showcase from "../assets/showcase.png";
+import showcase_full from "../assets/showcase-full.png";
 import "../styles/ClientWork.scss";
 import Tag from "./Tag";
 import { Fade } from "react-awesome-reveal";
 
-import { FiGithub } from "react-icons/fi";
 import { VscLinkExternal } from "react-icons/vsc";
 
 export default function ClientWork() {
@@ -35,27 +36,85 @@ export default function ClientWork() {
       </div>
       <div className="all-projects">
         <Fade damping={0.5} cascade triggerOnce={true}>
-          <div className="project">
+          <div className="project right">
             <div className="project-info">
               <h5>
-                John Hancock Hub{" "}
+                Courageous Showcase 2020{" "}
                 <a
-                  href="https://www.cnn.com/interactive/ATT/ForcesOfChange/"
+                  href="http://showcase.courageousstudios.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {size !== "mobile" && (
+                    <VscLinkExternal
+                      color={"white"}
+                      className="external"
+                      size={"0.8em"}
+                    />
+                  )}
+                </a>
+              </h5>
+              <p>
+                Showcase website for 2020 video lineup from Courageous Studios.
+              </p>
+              {size !== "desktop" && (
+                <a
+                  href="http://showcase.courageousstudios.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <VscLinkExternal
                     color={"white"}
-                    className="external"
-                    size={"0.8em"}
+                    className="external-mobile"
+                    size={"1em"}
                   />
+                </a>
+              )}
+              <div className="tag-container">
+                <Tag title={"React.js"} />
+                <Tag title={"Sass"} />
+              </div>
+            </div>
+            <img
+              src={size === "desktop" ? showcase_full : showcase}
+              alt="project screenshot"
+            />
+          </div>
+          <div className="project">
+            <div className="project-info">
+              <h5>
+                John Hancock Hub{" "}
+                <a
+                  href="http://sponsorcontent.cnn.com/interactive/john-hancock/the-game-of-happy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {size !== "mobile" && (
+                    <VscLinkExternal
+                      color={"white"}
+                      className="external"
+                      size={"0.8em"}
+                    />
+                  )}
                 </a>
               </h5>
               <p>
                 Responsive suite of pages for John Hancock. Pages include full
                 width video pages, articles, and an infographic.
               </p>
-
+              {size !== "desktop" && (
+                <a
+                  href="http://sponsorcontent.cnn.com/interactive/john-hancock/the-game-of-happy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external-mobile"
+                    size={"1em"}
+                  />
+                </a>
+              )}
               <div className="tag-container">
                 <Tag title={"React.js"} />
                 <Tag title={"YouTube API"} />
@@ -80,11 +139,13 @@ export default function ClientWork() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <VscLinkExternal
-                    color={"white"}
-                    className="external"
-                    size={"0.8em"}
-                  />
+                  {size !== "mobile" && (
+                    <VscLinkExternal
+                      color={"white"}
+                      className="external"
+                      size={"0.8em"}
+                    />
+                  )}
                 </a>{" "}
                 AT&T Forces of Change{" "}
               </h5>
@@ -92,7 +153,19 @@ export default function ClientWork() {
                 Responsive landing page for the Forces of Change video series.
                 Continuously updated with new videos as they are created.
               </p>
-
+              {size !== "desktop" && (
+                <a
+                  href="https://www.cnn.com/interactive/ATT/ForcesOfChange/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external-mobile"
+                    size={"1em"}
+                  />
+                </a>
+              )}
               <div className="tag-container">
                 <Tag title={"React.js"} />
                 <Tag title={"YouTube API"} />
@@ -108,11 +181,13 @@ export default function ClientWork() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <VscLinkExternal
-                    color={"white"}
-                    className="external"
-                    size={"0.8em"}
-                  />
+                  {size !== "mobile" && (
+                    <VscLinkExternal
+                      color={"white"}
+                      className="external"
+                      size={"0.8em"}
+                    />
+                  )}
                 </a>
               </h5>
               <p>
@@ -120,7 +195,19 @@ export default function ClientWork() {
                 articles and a white paper. Features include custom image
                 slideshow, parallax image header, and embedded videos.
               </p>
-
+              {size !== "desktop" && (
+                <a
+                  href="https://www.cnn.com/interactive/HSBC/SecuringTheWorld"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <VscLinkExternal
+                    color={"white"}
+                    className="external-mobile"
+                    size={"1em"}
+                  />
+                </a>
+              )}
               <div className="tag-container">
                 <Tag title={"React.js"} />
                 <Tag title={"YouTube API"} />

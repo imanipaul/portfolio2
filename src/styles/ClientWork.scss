@@ -100,7 +100,7 @@
           font-size: 20px;
           color: white;
           margin: 0px;
-          margin-top: 20px;
+          // margin-top: 20px;
           line-height: 20px;
 
           .external {
@@ -129,6 +129,10 @@
           @media screen and (min-width: $laptop-min) {
             font-size: 20px;
           }
+        }
+
+        .external-mobile {
+          margin-top: 10px;
         }
 
         .tag-container {
