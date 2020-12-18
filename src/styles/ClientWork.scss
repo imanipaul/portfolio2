@@ -45,7 +45,7 @@
     .project {
       display: flex;
       flex-direction: row;
-      height: 260px;
+      min-height: 260px;
       margin-top: 40px;
       position: relative;
 
@@ -137,6 +137,10 @@
           flex-direction: row;
           flex-wrap: wrap;
           margin-top: 25px;
+
+          .tag {
+            background-color: #151515;
+          }
         }
 
         .icons {
