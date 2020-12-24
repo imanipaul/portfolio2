@@ -1,14 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Particles from "react-tsparticles";
 import particlesOptions from "../particles.json";
 import { Link } from "react-scroll";
 
 import "../styles/Home.scss";
+import { revealChildren } from "../assets/utils/utils";
 
 export default function Home() {
+  const homeContent = useRef(null);
+
+  useEffect(() => {
+    revealChildren(homeContent, 7, "20px");
+  });
+
   return (
     <section className="home" style={{ height: window.innerHeight }}>
-      <div>
+      <div ref={homeContent}>
         <h1>Imani Paul</h1>
 
         <h2>
