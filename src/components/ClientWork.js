@@ -9,7 +9,6 @@ import showcase from "../assets/showcase.png";
 import showcase_full from "../assets/showcase-full.png";
 import "../styles/ClientWork.scss";
 import Tag from "./Tag";
-import { Fade } from "react-awesome-reveal";
 
 import { revealChildren } from "../assets/utils/utils";
 

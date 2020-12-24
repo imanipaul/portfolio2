@@ -23,7 +23,7 @@ export default function About() {
     revealChildren(contentRef);
 
     sr.reveal(imageRef.current, config);
-  }, []);
+  });
 
   return (
     <section className="about" id="about">
@@ -40,7 +40,13 @@ export default function About() {
             <p>
               I’m currently a web developer at{" "}
               <span>
-                <a href="#">Courageous Studios, WarnerMedia</a>
+                <a
+                  href="https://www.courageousstudios.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Courageous Studios, WarnerMedia
+                </a>
               </span>
               . I am a software engineer and business consultant with a unique
               background.

@@ -57,10 +57,18 @@ export default function Projects() {
         <div className="project-card">
           <h5>
             Portfolio V1{" "}
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://imanipaul.github.io/portfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <VscLinkExternal className="external" size={"0.8em"} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/imanipaul/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FiGithub className="github" size={"0.8em"} />
             </a>
           </h5>

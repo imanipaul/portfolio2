@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Particles from "react-tsparticles";
 import particlesOptions from "../particles.json";
 import { Link } from "react-scroll";

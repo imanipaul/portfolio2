@@ -9,8 +9,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsCodeSlash, BsPerson } from "react-icons/bs";
 import { BiCodeCurly } from "react-icons/bi";
 import { CgMenu } from "react-icons/cg";
-import { revealChildren, setConfig } from "../assets/utils/utils";
-import sr from "../assets/utils/sr";
+import { revealChildren } from "../assets/utils/utils";
 
 export default function Nav() {
   let navRef = useRef(null);
@@ -22,7 +21,6 @@ export default function Nav() {
   let menuRef = useRef(null);
 
   let desktopMenu = useRef(null);
-  let desktopLogo = useRef(null);
 
   let [size, setSize] = useState(
     window.innerWidth < 768 ? "mobile" : "desktop"
@@ -108,8 +106,6 @@ export default function Nav() {
           <BsPerson />
           <p>About</p>
         </Link>
-        {/* </Link> */}
-        {/* <Link to="work" smooth={true} isDynamic={true} spy={true}> */}
         <Link
           ref={workRef}
           className={`item ${mobileNavExpanded ? "show" : "hide"}`}
@@ -132,7 +128,6 @@ export default function Nav() {
           <CgMenu />
           <p>Menu</p>
         </div>
-        {/* <Link to="projects" smooth={true} isDynamic={true} spy={true}> */}
         <Link
           ref={projectRef}
           className={`item ${mobileNavExpanded ? "show" : "hide"}`}
@@ -142,8 +137,6 @@ export default function Nav() {
           <BiCodeCurly />
           <p>Projects</p>
         </Link>
-        {/* </Link> */}
-        {/* <Link to="contact" smooth={true} isDynamic={true} spy={true}> */}
         <Link
           ref={contactRef2}
           className={`item ${mobileNavExpanded ? "show" : "hide"}`}
@@ -153,7 +146,6 @@ export default function Nav() {
           <AiOutlineMail />
           <p>Contact</p>
         </Link>
-        {/* </Link> */}
       </section>
     </nav>
   );
