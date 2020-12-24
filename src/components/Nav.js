@@ -1,10 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo2 from "../assets/logo.svg";
-import logo3 from "../assets/logo3.svg";
-import logo4 from "../assets/logo4.svg";
-import logo5 from "../assets/logo5.svg";
-import logo6 from "../assets/logo6.svg";
-import logo7 from "../assets/logo7.svg";
+
 import Logo from "./Logo";
 import "../styles/Nav.scss";
 
