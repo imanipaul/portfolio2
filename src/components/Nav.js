@@ -1,5 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../assets/logo.svg";
+import logo2 from "../assets/logo.svg";
+import logo3 from "../assets/logo3.svg";
+import logo4 from "../assets/logo4.svg";
+import logo5 from "../assets/logo5.svg";
+import logo6 from "../assets/logo6.svg";
+import logo7 from "../assets/logo7.svg";
 import Logo from "./Logo";
 import "../styles/Nav.scss";
 
@@ -65,7 +70,8 @@ export default function Nav() {
 
   return (
     <nav ref={navRef}>
-      <Logo fill="#fff" class="logo" />
+      <Logo fill="#151515" textFill="#151515" class="logo" />
+      {/* <img src={logo7} className="logo" /> */}
       <div className="menu ">
         <Link to="about" smooth={true} isDynamic={true} spy={true}>
           About

@@ -104,16 +104,37 @@ nav {
     position: absolute;
     left: 3%;
     display: none;
+
+    circle {
+      transition: fill 0.3s ease;
+      fill: #151515;
+    }
+
+    path {
+      transition: fill 0.3s ease;
+      &:first-of-type {
+        //IP color
+        fill: white;
+      }
+    }
+
     @media screen and (min-width: $tablet-max) {
-      path {
-        &:first-of-type {
-          fill: $purple-accent;
+      &:hover {
+        circle {
+          fill: white;
+        }
+
+        path {
+          &:first-of-type {
+            //IP color
+            fill: #151515;
+          }
         }
       }
 
-      rect {
-        fill: $purple-accent;
-      }
+      // rect {
+      //   fill: $purple-accent;
+      // }
     }
 
     @media screen and (min-width: $tablet-min) {
