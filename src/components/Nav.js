@@ -9,6 +9,8 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsCodeSlash, BsPerson } from "react-icons/bs";
 import { BiCodeCurly } from "react-icons/bi";
 import { CgMenu } from "react-icons/cg";
+import { revealChildren, setConfig } from "../assets/utils/utils";
+import sr from "../assets/utils/sr";
 
 export default function Nav() {
   let navRef = useRef(null);
@@ -18,6 +20,10 @@ export default function Nav() {
   let workRef = useRef(null);
   let projectRef = useRef(null);
   let menuRef = useRef(null);
+
+  let desktopMenu = useRef(null);
+  let desktopLogo = useRef(null);
+
   let [size, setSize] = useState(
     window.innerWidth < 768 ? "mobile" : "desktop"
   );
@@ -27,13 +33,14 @@ export default function Nav() {
     window.addEventListener("resize", function () {
       window.innerWidth < 768 ? setSize("mobile") : setSize("desktop");
     });
+
+    revealChildren(desktopMenu, 1, "10px");
   });
 
   function resetNav() {
     navRef.current.style.bottom = "-100px";
 
     setTimeout(() => setMobileNavExpanded(false), 300);
-    // setMobileNavExpanded(false);
   }
 
   let prevScrollPos = window.pageYOffset;
@@ -66,8 +73,7 @@ export default function Nav() {
   return (
     <nav ref={navRef}>
       <Logo fill="#151515" textFill="#151515" class="logo" />
-      {/* <img src={logo7} className="logo" /> */}
-      <div className="menu ">
+      <div className="menu " ref={desktopMenu}>
         <Link to="about" smooth={true} isDynamic={true} spy={true}>
           About
         </Link>
@@ -83,7 +89,6 @@ export default function Nav() {
       </div>
 
       <section className="mobile-nav">
-        {/* <Link to="contact" smooth={true} isDynamic={true}> */}
         <Link
           ref={contactRef}
           className={`item ${mobileNavExpanded ? "hide" : "show"}`}
@@ -93,8 +98,7 @@ export default function Nav() {
           <AiOutlineMail />
           <p>Contact</p>
         </Link>
-        {/* </Link> */}
-        {/* <Link to="about" smooth={true} isDynamic={true} spy={true}> */}
+
         <Link
           ref={aboutRef}
           className={`item ${mobileNavExpanded ? "show" : "hide"}`}

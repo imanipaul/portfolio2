@@ -7,6 +7,7 @@ import ClientWork from "./components/ClientWork";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ClientWork />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
