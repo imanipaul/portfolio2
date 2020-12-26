@@ -10,7 +10,8 @@ export default function Home() {
   const homeContent = useRef(null);
 
   useEffect(() => {
-    revealChildren(homeContent, 7, "20px");
+    setTimeout(revealChildren(homeContent, 1, "20px"), 5000);
+    // revealChildren(homeContent, 1, "20px");
   });
 
   return (

@@ -123,7 +123,7 @@ export default function ClientWork() {
             )}
             <div className="tag-container">
               <Tag title={"React.js"} />
-              <Tag title={"YouTube API"} />
+              <Tag title={"CSS Animations"} />
               <Tag title={"Infographic"} />
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function ClientWork() {
             )}
             <div className="tag-container">
               <Tag title={"React.js"} />
-              <Tag title={"YouTube API"} />
+              <Tag title={"Sass"} />
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@ export default function ClientWork() {
             )}
             <div className="tag-container">
               <Tag title={"React.js"} />
-              <Tag title={"YouTube API"} />
+              <Tag title={"Parallax design"} />
             </div>
           </div>
           <img

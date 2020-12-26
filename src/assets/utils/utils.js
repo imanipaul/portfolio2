@@ -12,6 +12,10 @@ export const revealContent = (ref, origin, delay, distance) => {
   sr.reveal(ref, setConfig(origin, delay, distance));
 };
 
+function setHidden(el) {
+  el.classList.add("is-animating");
+}
+
 export const setConfig = (
   origin = "bottom",
   delay = 100,
@@ -24,6 +28,12 @@ export const setConfig = (
     distance,
     scale: 1,
     easing: "ease",
+    mobile: true,
+    viewFactor: 0.25,
+    reset: false,
+    useDelay: "always",
+    viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
+    beforeReveal: setHidden,
   };
 
   return config;

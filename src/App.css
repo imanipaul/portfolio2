@@ -28,6 +28,10 @@ body {
   text-align: center;
 }
 
+.is-animating {
+  visibility: hidden;
+}
+
 #tsparticles {
   position: fixed;
   height: 100%;

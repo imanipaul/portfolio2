@@ -39,7 +39,7 @@ export default function About() {
             </p>
             <p>
               I’m currently a web developer at{" "}
-              <span>
+              <span className="underline">
                 <a
                   href="https://www.courageousstudios.com"
                   target="_blank"
@@ -53,9 +53,9 @@ export default function About() {
             </p>
 
             <p>
-              <span className="underline">When I’m not at my computer</span>, I
-              enjoy reading sci-fi novels, knitting scarves and blankets for my
-              friends and family, and baking sweets!
+              <span>When I’m not at my computer</span>, I enjoy reading sci-fi
+              novels, knitting scarves and blankets for my friends and family,
+              and baking sweets!
             </p>
           </div>
           <img ref={imageRef} src={headshot} alt="headshot" />
