@@ -90,10 +90,21 @@ $animate: all 0.2s ease-in-out;
       span {
         color: white;
         font-weight: 500;
-        cursor: default;
+        // cursor: default;
 
         &.link {
           cursor: auto;
+
+          &:hover {
+            cursor: pointer;
+            a {
+              &:before,
+              &:after {
+                width: 100%;
+                opacity: 1;
+              }
+            }
+          }
         }
         a {
           color: white;
@@ -118,17 +129,6 @@ $animate: all 0.2s ease-in-out;
             transition-duration: 0.3s;
             opacity: 0;
             background-color: $green-accent;
-          }
-        }
-
-        &:hover {
-          cursor: pointer;
-          a {
-            &:before,
-            &:after {
-              width: 100%;
-              opacity: 1;
-            }
           }
         }
       }
