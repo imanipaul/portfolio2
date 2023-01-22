@@ -11,7 +11,6 @@ export default function Home() {
 
   useEffect(() => {
     setTimeout(revealChildren(homeContent, 1, "20px"), 5000);
-    // revealChildren(homeContent, 1, "20px");
   });
 
   return (
