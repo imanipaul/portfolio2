@@ -34,36 +34,27 @@ export default function About() {
             <p>Hi! I'm Imani, a software engineer based in New York.</p>
             <p>
               As a software engineer I enjoy building things that improve
-              people’s lives. Whether that's a client or the end user, I enjoy
-              bridging the gap between technical issues and business needs.
+              people's lives. Whether that's an internal client or the end user,
+              I enjoy bridging the gap between technical issues and business
+              needs.
             </p>
             <p>
-              I’m currently part of the{" "}
+              I'm currently part of the{" "}
               <span className="link">
                 <a
-                  href="https://www.nike.com/snkrs-app"
+                  href="https://www.nike.com/launch"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   SNKRS
                 </a>
               </span>{" "}
-              Web team at{" "}
-              <span className="link">
-                <a
-                  href="https://www.nike.com/snkrs-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  S23NYC
-                </a>
-              </span>
-              , Nike's New York Studio. I am a software engineer and business
-              consultant with a unique background.
+              Web team at <span>S23NYC</span>, Nike's New York Studio. I am a
+              software engineer and business consultant with a unique
+              background.
             </p>
-
             <p>
-              <span>When I’m not at my computer</span>, I enjoy reading sci-fi
+              <span>When I'm not at my computer</span>, I enjoy reading sci-fi
               novels, knitting scarves and blankets for my friends and family,
               and baking sweets!
             </p>

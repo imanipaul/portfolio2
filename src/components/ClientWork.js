@@ -46,7 +46,7 @@ export default function ClientWork() {
           <div className="project-info">
             <h5>
               <a
-                href="http://showcase.courageousstudios.com"
+                href="https://imanipaul.github.io/courageous-showcase-copy/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
